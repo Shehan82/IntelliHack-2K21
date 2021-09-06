@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App">
       <Animation />
-      <Clock />
+      {/* <Clock /> */}
+      <div style={{ height: 800 }}></div>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.navbar-cnt {
+  width: 100%;
+  height: 0px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+
+  transition: all 0.3s ease 0.15s;
+  z-index: 100;
+}
+
+.navbar-display {
+  height: 60px;
+}

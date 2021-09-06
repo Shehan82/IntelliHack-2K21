@@ -1,6 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as THREE from "three";
 import "../styles/animation.css";
+import logo from "../img/logo.png";
+import Clock from "../components/Clock";
+import NavBar from "../components/NavBar";
 
 function Animation() {
   useEffect(() => {
@@ -41,7 +44,7 @@ function Animation() {
     const particlesMaterial = new THREE.PointsMaterial({
       size: 0.005,
       //   transparent: true,
-      color: "blue",
+      // color: "blue",
     });
     material.color = new THREE.Color(0x919191);
 
@@ -107,7 +110,7 @@ function Animation() {
     });
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setClearColor(new THREE.Color("#21282a"), 1);
+    // renderer.setClearColor(new THREE.Color("#21282a"), 1);
 
     // Mouse
 
@@ -151,12 +154,30 @@ function Animation() {
 
     tick();
   }, []);
+
+  const [display, setdisplay] = useState(false);
+
+  const displayNavBar = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY > 0) {
+      setdisplay(true);
+    } else if (window.scrollY <= 0) {
+      setdisplay(false);
+    }
+  };
+
+  window.addEventListener("scroll", displayNavBar);
   return (
     <div>
       <div className="container">
+        <NavBar display={display} />
         <div className="content">
+          {/* <img className="logo" src={logo} alt="" /> */}
           <h1>IntelliHack 2K21</h1>
           <p>Artificial, But Inteligent</p>
+          <div className="clock-div">
+            <Clock />
+          </div>
         </div>
       </div>
       <canvas class="webgl"></canvas>
