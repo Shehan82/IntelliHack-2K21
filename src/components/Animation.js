@@ -4,6 +4,7 @@ import "../styles/animation.css";
 import logo from "../img/logo.png";
 import Clock from "../components/Clock";
 import NavBar from "../components/NavBar";
+import Typewriter from "typewriter-effect";
 
 function Animation() {
   useEffect(() => {
@@ -110,7 +111,7 @@ function Animation() {
     });
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    // renderer.setClearColor(new THREE.Color("#21282a"), 1);
+    // renderer.setClearColor(new THREE.Color("#00356B"), 1);
 
     // Mouse
 
@@ -137,10 +138,10 @@ function Animation() {
       sphere.rotation.y = 0.5 * elapsedTime;
       particleMesh.rotation.y = -0.1 * elapsedTime;
 
-      if (mouseX > 0) {
-        particleMesh.rotation.x = -mouseY * (elapsedTime * 0.00008);
-        particleMesh.rotation.y = -mouseX * (elapsedTime * 0.00008);
-      }
+      // if (mouseX > 0) {
+      //   particleMesh.rotation.x = -mouseY * (elapsedTime * 0.00008);
+      //   particleMesh.rotation.y = -mouseX * (elapsedTime * 0.00008);
+      // }
 
       // Update Orbital Controls
       // controls.update()
@@ -171,10 +172,36 @@ function Animation() {
     <div>
       <div className="container">
         <NavBar display={display} />
+        <div className="logo-cnt"></div>
+
         <div className="content">
           {/* <img className="logo" src={logo} alt="" /> */}
-          <h1>IntelliHack 2K21</h1>
-          <p>Artificial, But Inteligent</p>
+          <h1 className="main-text">IntelliHack '21</h1>
+          {/* <p>Artificial, But Inteligent</p> */}
+          <div className="type-writer">
+            <Typewriter
+              options={{ autoStart: true, loop: true }}
+              onInit={(typewriter) => {
+                typewriter
+
+                  .typeString(
+                    "First ever machine learning hackerthon sri Lanka"
+                  )
+                  .callFunction(() => {
+                    console.log("String typed out!");
+                  })
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .callFunction(() => {
+                    console.log("All strings were deleted");
+                  })
+                  .typeString("Artificial, But Inteligent")
+                  .pauseFor(2500)
+                  .start();
+              }}
+            />
+          </div>
+
           <div className="clock-div">
             <Clock />
           </div>
