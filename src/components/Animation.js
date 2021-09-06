@@ -14,10 +14,10 @@ function Animation() {
     const scene = new THREE.Scene();
 
     // Objects
-    const geometry = new THREE.TorusGeometry(0.8, 0.2, 16, 100);
+    const geometry = new THREE.TorusGeometry(1, 0.2, 16, 100);
 
     const particleGeometry = new THREE.BufferGeometry();
-    const particleCounts = 300;
+    const particleCounts = 100;
 
     const posArray = new Float32Array(particleCounts * 3);
 
@@ -41,9 +41,9 @@ function Animation() {
     const particlesMaterial = new THREE.PointsMaterial({
       size: 0.005,
       //   transparent: true,
-      //   color: "blue",
+      color: "blue",
     });
-    // material.color = new THREE.Color(0xff0000)
+    material.color = new THREE.Color(0x919191);
 
     // Mesh
     const sphere = new THREE.Points(geometry, material);

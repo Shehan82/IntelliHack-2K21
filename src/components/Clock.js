@@ -13,7 +13,7 @@ function Clock() {
   setInterval(function () {
     var nowTime = new Date().getTime();
     var diff = countdown - nowTime;
-    console.log(diff);
+    // console.log(diff);
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((diff / 1000 / 60) % 60);
@@ -27,7 +27,7 @@ function Clock() {
 
   return (
     <div className="App">
-      <div style={{ margin: "1em", display: "flex", flexDirection: "column" }}>
+      <div style={{ margin: "1em", display: "flex" }}>
         <div style={{ display: "flex" }}>
           {ds < 10 ? (
             <div>
