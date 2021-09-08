@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as THREE from "three";
-import "../styles/animation.css";
+import "../styles/mainSection.css";
 import logo from "../img/logo.png";
 import Clock from "../components/Clock";
 import NavBar from "../components/NavBar";
@@ -29,7 +29,7 @@ function MainSection() {
           {/* <img className="logo" src={logo} alt="" /> */}
           <h1 className="main-text">IntelliHack '21</h1>
           {/* <p>Artificial, But Inteligent</p> */}
-          <div className="type-writer">
+          {/* <div className="type-writer">
             <Typewriter
               options={{ autoStart: true, loop: true }}
               onInit={(typewriter) => {
@@ -51,7 +51,7 @@ function MainSection() {
                   .start();
               }}
             />
-          </div>
+          </div> */}
 
           <div className="clock-div">
             <Clock />

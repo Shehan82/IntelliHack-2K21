@@ -1,0 +1,72 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.webgl {
+  margin-left: -20px;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 95vh;
+  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  position: relative;
+}
+
+.clock-div {
+  margin-left: -20px;
+  margin-top: 40px;
+}
+
+.main-text {
+  font-size: 7rem;
+  font-family: "Poppins", sans-serif;
+
+  color: white;
+}
+
+p {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-cnt {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.type-writer {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.logo {
+  height: 150px;
+}
+
+.hgx {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/pic.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */

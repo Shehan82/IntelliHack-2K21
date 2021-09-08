@@ -7,8 +7,9 @@ import MainSection from "./components/MainSection";
 function App() {
   return (
     <div className="App">
-      <MainSection />
+      {/* <MainSection /> */}
       {/* <Clock /> */}
+      <Animation />
       <div style={{ height: 800, width: 10, backgroundColor: "red" }}></div>
     </div>
   );

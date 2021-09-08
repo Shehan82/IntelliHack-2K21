@@ -16,55 +16,89 @@ function NavBar(props) {
         <img src={logo} alt="" className="navbar-img" />
       </div>
       <div className="navbar-items">
-        <div
-          onClick={(e) => {
-            setActive({ active: "timeline" });
-          }}
-          className={
-            active.active === "timeline" ? "navbar-item-active" : "navbar-item"
-          }
-        >
-          TIMELINE
+        <div className="navbar-item-cnt">
+          <div
+            onClick={(e) => {
+              setActive({ active: "timeline" });
+            }}
+          >
+            TIMELINE
+          </div>
+          <div
+            className={
+              active.active === "timeline"
+                ? "navbar-clicked"
+                : "navbar-not-clicked"
+            }
+          ></div>
         </div>
-        <div
-          onClick={(e) => {
-            setActive({ active: "price" });
-          }}
-          className={
-            active.active === "price" ? "navbar-item-active" : "navbar-item"
-          }
-        >
-          PRICES
+
+        <div className="navbar-item-cnt">
+          <div
+            onClick={(e) => {
+              setActive({ active: "price" });
+            }}
+          >
+            PRICES
+          </div>
+          <div
+            className={
+              active.active === "price"
+                ? "navbar-clicked"
+                : "navbar-not-clicked"
+            }
+          ></div>
         </div>
-        <div
-          onClick={(e) => {
-            setActive({ active: "about" });
-          }}
-          className={
-            active.active === "about" ? "navbar-item-active" : "navbar-item"
-          }
-        >
-          ABOUT US
+
+        <div className="navbar-item-cnt">
+          <div
+            onClick={(e) => {
+              setActive({ active: "about" });
+            }}
+          >
+            ABOUT US
+          </div>
+          <div
+            className={
+              active.active === "about"
+                ? "navbar-clicked"
+                : "navbar-not-clicked"
+            }
+          ></div>
         </div>
-        <div
-          onClick={(e) => {
-            setActive({ active: "sponsors" });
-          }}
-          className={
-            active.active === "sponsors" ? "navbar-item-active" : "navbar-item"
-          }
-        >
-          SPONSORS
+
+        <div className="navbar-item-cnt">
+          <div
+            onClick={(e) => {
+              setActive({ active: "sponsors" });
+            }}
+          >
+            SPONSORS
+          </div>
+          <div
+            className={
+              active.active === "sponsors"
+                ? "navbar-clicked"
+                : "navbar-not-clicked"
+            }
+          ></div>
         </div>
-        <div
-          onClick={(e) => {
-            setActive({ active: "contact" });
-          }}
-          className={
-            active.active === "contact" ? "navbar-item-active" : "navbar-item"
-          }
-        >
-          CONTACT US
+
+        <div className="navbar-item-cnt">
+          <div
+            onClick={(e) => {
+              setActive({ active: "contact" });
+            }}
+          >
+            CONTACT US
+          </div>
+          <div
+            className={
+              active.active === "contact"
+                ? "navbar-clicked"
+                : "navbar-not-clicked"
+            }
+          ></div>
         </div>
       </div>
     </div>
