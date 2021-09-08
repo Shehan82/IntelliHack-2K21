@@ -1,72 +1,195 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-.webgl {
-  margin-left: -20px;
-  top: 0;
-  left: 0;
-}
 
-.container {
-  position: absolute;
-  z-index: 1;
+.main-section-cnt {
+  z-index: 100;
   width: 100%;
-  height: 95vh;
-  display: grid;
+  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  /* background-color: rebeccapurple; */
 }
 
-.content {
-  margin-left: 40px;
+.main-section-content {
+  margin-left: 3vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-
+  align-items: flex-start;
+  /* background-color: red; */
   position: relative;
 }
 
-.clock-div {
+.clock-cnt {
   margin-left: -20px;
   margin-top: 40px;
+  -webkit-animation: fadeinClockDiv 5s;
+  -moz-animation: fadeinClockDiv 5s;
+  -ms-animation: fadeinClockDiv 5s;
+  -o-animation: fadeinClockDiv 5s;
+  animation: fadeinClockDiv 5s;
 }
 
-.main-text {
-  font-size: 7rem;
-  font-family: "Poppins", sans-serif;
+@keyframes fadeinClockDiv {
+  from {
+    margin-left: 200px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-left: -20px;
+  }
+}
 
+@-moz-keyframes fadeinClockDiv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeinClockDiv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeinClockDiv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeinClockDiv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-section-main-text {
+  font-size: 90px;
   color: white;
+  -webkit-animation: fadeinMainText 2s;
+  -moz-animation: fadeinMainText 2s;
+  -ms-animation: fadeinMainText 2s;
+  -o-animation: fadeinMainText 2s;
+  animation: fadeinMainText 2s;
 }
 
-p {
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
+@keyframes fadeinMainText {
+  from {
+    margin-left: 200px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0px;
+  }
 }
 
-.logo-cnt {
-  position: absolute;
-  top: 80px;
-  left: 80px;
+@-moz-keyframes fadeinMainText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.type-writer {
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+@-webkit-keyframes fadeinMainText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeinMainText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeinMainText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-section-sub-text {
   color: white;
+  font-size: 28px;
+  margin-top: 20px;
+  color: #62ea34;
+  -webkit-animation: fadeinSubText 3s;
+  -moz-animation: fadeinSubText 3s;
+  -ms-animation: fadeinSubText 3s;
+  -o-animation: fadeinSubText 3s;
+  animation: fadeinSubText 3s;
 }
 
-.logo {
-  height: 150px;
+@keyframes fadeinSubText {
+  from {
+    margin-left: 200px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0px;
+  }
 }
 
-.hgx {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../img/pic.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+@-moz-keyframes fadeinSubText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeinSubText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeinSubText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeinSubText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

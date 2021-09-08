@@ -7,17 +7,15 @@
   height: 60px;
   background-color: white;
   position: fixed;
-  top: -60px;
-
+  top: -80px;
   align-items: center;
-  transition: all 0.2s ease 0.15s;
+  transition: all 0.8s ease 0.15s;
   z-index: 100;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   justify-content: space-between;
 }
 
 .navbar-display {
-  /* height: 70px; */
   top: 0px;
 }
 
@@ -33,57 +31,53 @@
   display: flex;
   color: black;
   margin-right: 200px;
-  /* background-color: aquamarine; */
   height: 100%;
   align-items: center;
   justify-content: space-between;
   width: 40%;
   font-size: 16px;
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 }
 
-.navbar-item-active {
-  /* background-color: red; */
-  border-bottom: 4px solid black;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  margin-top: 4px;
-  cursor: pointer;
-}
 .navbar-item {
   display: flex;
   align-items: center;
   margin-top: 4px;
   cursor: pointer;
-  /* border: 1px solid black; */
+
   width: fit-content;
 }
 
 .navbar-item-cnt {
-  /* border: 1px solid black; */
   position: relative;
   height: 40px;
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  transition: all 0.2s ease 0.15s;
+}
+
+.navbar-item-cnt:hover .navbar-not-clicked {
+  width: 100%;
 }
 
 .navbar-clicked {
   position: absolute;
+  border-radius: 10px;
   bottom: 0;
-  width: 100%;
+  width: 0;
   height: 4px;
-  background-color: black;
-  transition: all 0.8s ease 0.15s;
+  background-color: #254495;
+  transition: all 0.3s ease 0.15s;
 }
 
 .navbar-not-clicked {
   position: absolute;
+  border-radius: 10px;
   bottom: 0;
   width: 0px;
   height: 4px;
-  background-color: black;
-  /* transition: all 0.8s ease 0.15s; */
+  background-color: #254495;
+  transition: all 0.3s ease 0.15s;
 }

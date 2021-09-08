@@ -2,15 +2,14 @@ import React, { useEffect, useState } from "react";
 import * as THREE from "three";
 import "../styles/mainSection.css";
 import logo from "../img/logo.png";
-import Clock from "../components/Clock";
-import NavBar from "../components/NavBar";
+import Clock from "./Clock";
+import NavBar from "./NavBar";
 import Typewriter from "typewriter-effect";
 
 function MainSection() {
   const [display, setdisplay] = useState(false);
 
   const displayNavBar = () => {
-    // console.log(window.scrollY);
     if (window.scrollY > 0) {
       setdisplay(true);
     } else if (window.scrollY <= 0) {
@@ -20,24 +19,18 @@ function MainSection() {
 
   window.addEventListener("scroll", displayNavBar);
   return (
-    <div className="hgx">
-      <div className="container">
+    <div>
+      <div className="main-section-cnt">
         <NavBar display={display} />
-        <div className="logo-cnt"></div>
-
-        <div className="content">
-          {/* <img className="logo" src={logo} alt="" /> */}
-          <h1 className="main-text">IntelliHack '21</h1>
-          {/* <p>Artificial, But Inteligent</p> */}
-          {/* <div className="type-writer">
+        <div className="main-section-content">
+          <div className="main-section-main-text">IntelliHack'21</div>
+          <div className="main-section-sub-text">
             <Typewriter
               options={{ autoStart: true, loop: true }}
               onInit={(typewriter) => {
                 typewriter
 
-                  .typeString(
-                    "First ever machine learning hackerthon sri Lanka"
-                  )
+                  .typeString("Artificial, But Inteligent")
                   .callFunction(() => {
                     console.log("String typed out!");
                   })
@@ -51,9 +44,9 @@ function MainSection() {
                   .start();
               }}
             />
-          </div> */}
+          </div>
 
-          <div className="clock-div">
+          <div className="clock-cnt">
             <Clock />
           </div>
         </div>
