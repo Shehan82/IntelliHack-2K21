@@ -21,6 +21,7 @@
 
 .navbar-img-cnt {
   margin-left: 200px;
+  transition: all 0.5s ease 0.15s;
 }
 
 .navbar-img {
@@ -36,6 +37,7 @@
   justify-content: space-between;
   width: 40%;
   font-size: 16px;
+  transition: all 0.5s ease 0.15s;
   /* font-family: "Montserrat", sans-serif; */
 }
 
@@ -62,6 +64,10 @@
   width: 100%;
 }
 
+.mobile-menu-item-cnt {
+  display: none;
+}
+
 .navbar-clicked {
   position: absolute;
   border-radius: 10px;
@@ -80,4 +86,102 @@
   height: 4px;
   background-color: #254495;
   transition: all 0.3s ease 0.15s;
+}
+
+.navbar-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin-right: 20px;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.mobile-menu-item-cnt {
+  display: none;
+}
+
+.mobile-menu-item-cnt-display {
+  display: none;
+}
+
+@media (max-width: 1430px) {
+  .navbar-items {
+    display: flex;
+    margin-right: 50px;
+    color: black;
+
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    font-size: 16px;
+    /* font-family: "Montserrat", sans-serif; */
+  }
+}
+
+@media (max-width: 1430px) {
+  .navbar-img-cnt {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar-menu {
+    display: flex;
+  }
+
+  .navbar-items {
+    display: none;
+  }
+
+  .navbar-img-cnt {
+    margin-left: 10px;
+  }
+
+  .mobile-menu-row {
+    display: flex;
+    /* background-color: rebeccapurple; */
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .navbar-display {
+    flex-direction: column;
+    justify-content: center;
+    /* height: 300px; */
+    height: fit-content;
+  }
+
+  .navbar-menu {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .mobile-menu-item-cnt-display {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .mobile-menu-item-cnt {
+    display: none;
+  }
+
+  .mobile-row {
+    /* background-color: red; */
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mobile-row:hover {
+    background-color: #254495;
+    color: white;
+  }
 }

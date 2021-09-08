@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 .main-section-cnt {
@@ -81,6 +81,7 @@
 .main-section-main-text {
   font-size: 90px;
   color: white;
+  /* font-family: "Poppins", sans-serif; */
   -webkit-animation: fadeinMainText 2s;
   -moz-animation: fadeinMainText 2s;
   -ms-animation: fadeinMainText 2s;
