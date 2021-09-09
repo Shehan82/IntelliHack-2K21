@@ -46,17 +46,6 @@
   font-size: 30px;
 }
 
-.white-logo {
-  height: 200px;
-  /* position: absolute; */
-  top: 20px;
-  -webkit-animation: fadeinMainText 2s;
-  -moz-animation: fadeinMainText 2s;
-  -ms-animation: fadeinMainText 2s;
-  -o-animation: fadeinMainText 2s;
-  animation: fadeinMainText 2s;
-}
-
 @keyframes fadeinClockDiv {
   from {
     margin-left: 200px;
@@ -71,36 +60,44 @@
 @-moz-keyframes fadeinClockDiv {
   from {
     opacity: 0;
+    margin-left: 200px;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
 @-webkit-keyframes fadeinClockDiv {
   from {
     opacity: 0;
+    margin-left: 200px;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
 @-ms-keyframes fadeinClockDiv {
   from {
     opacity: 0;
+    margin-left: 200px;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
 @-o-keyframes fadeinClockDiv {
   from {
     opacity: 0;
+    margin-left: 200px;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
@@ -108,6 +105,17 @@
   font-size: 90px;
   color: white;
   /* font-family: "Poppins", sans-serif; */
+  -webkit-animation: fadeinMainText 2s;
+  -moz-animation: fadeinMainText 2s;
+  -ms-animation: fadeinMainText 2s;
+  -o-animation: fadeinMainText 2s;
+  animation: fadeinMainText 2s;
+}
+
+.white-logo {
+  height: 200px;
+  /* position: absolute; */
+  top: 20px;
   -webkit-animation: fadeinMainText 2s;
   -moz-animation: fadeinMainText 2s;
   -ms-animation: fadeinMainText 2s;
@@ -128,37 +136,45 @@
 
 @-moz-keyframes fadeinMainText {
   from {
+    margin-left: 200px;
     opacity: 0;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
 @-webkit-keyframes fadeinMainText {
   from {
+    margin-left: 200px;
     opacity: 0;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
 @-ms-keyframes fadeinMainText {
   from {
+    margin-left: 200px;
     opacity: 0;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
 @-o-keyframes fadeinMainText {
   from {
+    margin-left: 200px;
     opacity: 0;
   }
   to {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
