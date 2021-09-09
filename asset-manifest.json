@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IntelliHack-2K21/static/css/main.9abb0fbc.chunk.css",
+    "main.css": "/IntelliHack-2K21/static/css/main.620dd9ec.chunk.css",
     "main.js": "/IntelliHack-2K21/static/js/main.9bbb9fd5.chunk.js",
     "main.js.map": "/IntelliHack-2K21/static/js/main.9bbb9fd5.chunk.js.map",
     "runtime-main.js": "/IntelliHack-2K21/static/js/runtime-main.9b766319.js",
@@ -12,7 +12,7 @@
     "static/js/3.02479b30.chunk.js.map": "/IntelliHack-2K21/static/js/3.02479b30.chunk.js.map",
     "index.html": "/IntelliHack-2K21/index.html",
     "static/css/2.58a3595b.chunk.css.map": "/IntelliHack-2K21/static/css/2.58a3595b.chunk.css.map",
-    "static/css/main.9abb0fbc.chunk.css.map": "/IntelliHack-2K21/static/css/main.9abb0fbc.chunk.css.map",
+    "static/css/main.620dd9ec.chunk.css.map": "/IntelliHack-2K21/static/css/main.620dd9ec.chunk.css.map",
     "static/js/2.bcb00151.chunk.js.LICENSE.txt": "/IntelliHack-2K21/static/js/2.bcb00151.chunk.js.LICENSE.txt",
     "static/media/mainSection.css": "/IntelliHack-2K21/static/media/bg2.87aab9cc.jpg",
     "static/media/logo.6ce24c58.svg": "/IntelliHack-2K21/static/media/logo.6ce24c58.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.9b766319.js",
     "static/css/2.58a3595b.chunk.css",
     "static/js/2.bcb00151.chunk.js",
-    "static/css/main.9abb0fbc.chunk.css",
+    "static/css/main.620dd9ec.chunk.css",
     "static/js/main.9bbb9fd5.chunk.js"
   ]
 }
