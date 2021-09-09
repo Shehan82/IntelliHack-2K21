@@ -97,6 +97,7 @@ function App() {
     };
     tick();
   }, []);
+
   return (
     <div>
       <canvas class="webgl"></canvas>

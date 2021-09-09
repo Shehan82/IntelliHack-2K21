@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/timeline.css";
 import { ReactComponent as LogoIcon } from "../logo.svg";
 import timelineElements from "./timelineElements";
@@ -12,10 +12,26 @@ import "react-vertical-timeline-component/style.min.css";
 function Timeline() {
   let logoIconStyle = { background: "#06D6A0" };
 
+  const [animate, setanimate] = useState(false);
+  useEffect(() => {
+    updateSize();
+  }, []);
+
+  function updateSize() {
+    // console.log(window.innerWidth);
+    // console.log(10);
+    if (window.innerWidth < 1350) {
+      setanimate(false);
+    } else {
+      setanimate(true);
+    }
+  }
+  window.addEventListener("resize", updateSize);
+
   return (
     <div>
       <h2 className="title">Timeline</h2>
-      <VerticalTimeline>
+      <VerticalTimeline animate={animate}>
         {timelineElements.map((element) => {
           return (
             <VerticalTimelineElement
