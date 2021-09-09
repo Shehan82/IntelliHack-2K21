@@ -33,11 +33,11 @@
   display: flex;
   flex-direction: column;
 
-  -webkit-animation: fadeinClockDiv 5s;
-  -moz-animation: fadeinClockDiv 5s;
-  -ms-animation: fadeinClockDiv 5s;
-  -o-animation: fadeinClockDiv 5s;
-  animation: fadeinClockDiv 5s;
+  -webkit-animation: fadeinClockDiv 7s;
+  -moz-animation: fadeinClockDiv 7s;
+  -ms-animation: fadeinClockDiv 7s;
+  -o-animation: fadeinClockDiv 7s;
+  animation: fadeinClockDiv 7s;
 }
 
 .clock-text {
@@ -50,6 +50,11 @@
   height: 200px;
   /* position: absolute; */
   top: 20px;
+  -webkit-animation: fadeinMainText 5s;
+  -moz-animation: fadeinMainText 5s;
+  -ms-animation: fadeinMainText 5s;
+  -o-animation: fadeinMainText 5s;
+  animation: fadeinMainText 5s;
 }
 
 @keyframes fadeinClockDiv {
