@@ -8,6 +8,12 @@
   height: 100vh;
   display: flex;
   /* background-color: rebeccapurple; */
+  background-image: url("../img/bg2.jpg");
+  background-color: #cccccc;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-section-content {
@@ -22,13 +28,28 @@
 }
 
 .clock-cnt {
-  margin-top: 40px;
+  margin-top: 100px;
+  /* background-color: #62ea34; */
+  display: flex;
+  flex-direction: column;
 
   -webkit-animation: fadeinClockDiv 5s;
   -moz-animation: fadeinClockDiv 5s;
   -ms-animation: fadeinClockDiv 5s;
   -o-animation: fadeinClockDiv 5s;
   animation: fadeinClockDiv 5s;
+}
+
+.clock-text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.white-logo {
+  height: 200px;
+  /* position: absolute; */
+  top: 20px;
 }
 
 @keyframes fadeinClockDiv {
@@ -222,6 +243,10 @@
     color: white;
     /* font-family: "Poppins", sans-serif; */
   }
+  .clock-cnt {
+    margin-top: 60px;
+    align-items: center;
+  }
 }
 
 @media (max-width: 700px) {
@@ -230,5 +255,14 @@
     font-size: 5vw;
     margin-top: 20px;
     color: #62ea34;
+  }
+}
+
+@media (max-width: 500px) {
+  .clock-text {
+    font-size: 6vw;
+  }
+  .white-logo {
+    height: 35vw;
   }
 }

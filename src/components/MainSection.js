@@ -5,6 +5,7 @@ import logo from "../img/logo.png";
 import Clock from "./Clock";
 import NavBar from "./NavBar";
 import Typewriter from "typewriter-effect";
+import Logo from "../img/logoWhite.png";
 
 function MainSection() {
   const [display, setdisplay] = useState(false);
@@ -23,8 +24,9 @@ function MainSection() {
       <div className="main-section-cnt">
         <NavBar display={display} />
         <div className="main-section-content">
-          <div className="main-section-main-text">IntelliHack'21</div>
-          <div className="main-section-sub-text">
+          <img className="white-logo" src={Logo} alt="" />
+          {/* <div className="main-section-main-text">IntelliHack'21</div> */}
+          {/* <div className="main-section-sub-text">
             <Typewriter
               options={{ autoStart: true, loop: true }}
               onInit={(typewriter) => {
@@ -44,9 +46,10 @@ function MainSection() {
                   .start();
               }}
             />
-          </div>
+          </div> */}
 
           <div className="clock-cnt">
+            <div className="clock-text">Proposal submission ends in</div>
             <Clock />
           </div>
         </div>
