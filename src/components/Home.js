@@ -101,13 +101,6 @@ function Home() {
     tick();
   }, []);
 
-  // useEffect(() => {
-  //   setloading(true);
-  //   setTimeout(() => {
-  //     setloading(false);
-  //   }, 6000);
-  // }, []);
-
   return (
     <div>
       <div>

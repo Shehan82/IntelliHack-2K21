@@ -29,36 +29,36 @@ function NavBar(props) {
             : "mobile-menu-item-cnt"
         }
       >
-        <div className="mobile-row">TIMELINE</div>
-        <div className="mobile-row">PRICES</div>
-        <div className="mobile-row">ABOUT Us</div>
-        <div className="mobile-row">SPONSORS</div>
-        <div className="mobile-row">CONTACT US</div>
+        <div className="mobile-row">Timeline</div>
+        <div className="mobile-row">Prices</div>
+        <div className="mobile-row">About Us</div>
+        <div className="mobile-row">Sponsors</div>
+        <div className="mobile-row">Contact Us</div>
       </div>
 
       <div className="navbar-items">
         <div className="navbar-item-cnt">
-          <div>TIMELINE</div>
+          <div>Timeline</div>
           <div className="navbar-not-clicked"></div>
         </div>
 
         <div className="navbar-item-cnt">
-          <div>PRICES</div>
+          <div>Prices</div>
           <div className="navbar-not-clicked"></div>
         </div>
 
         <div className="navbar-item-cnt">
-          <div>ABOUT US</div>
+          <div>About Us</div>
           <div className="navbar-not-clicked"></div>
         </div>
 
         <div className="navbar-item-cnt">
-          <div>SPONSORS</div>
+          <div>Sponsors</div>
           <div className="navbar-not-clicked"></div>
         </div>
 
         <div className="navbar-item-cnt">
-          <div>CONTACT US</div>
+          <div>Contact Us</div>
           <div className="navbar-not-clicked"></div>
         </div>
       </div>

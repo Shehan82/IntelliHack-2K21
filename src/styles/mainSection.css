@@ -33,11 +33,11 @@
   display: flex;
   flex-direction: column;
 
-  -webkit-animation: fadeinClockDiv 3s;
-  -moz-animation: fadeinClockDiv 3s;
-  -ms-animation: fadeinClockDiv 3s;
-  -o-animation: fadeinClockDiv 3s;
-  animation: fadeinClockDiv 3s;
+  -webkit-animation: fadeinClockDiv 5s;
+  -moz-animation: fadeinClockDiv 5s;
+  -ms-animation: fadeinClockDiv 5s;
+  -o-animation: fadeinClockDiv 5s;
+  animation: fadeinClockDiv 5s;
 }
 
 .clock-text {
@@ -116,11 +116,11 @@
   height: 200px;
   /* position: absolute; */
   top: 20px;
-  -webkit-animation: fadeinMainText 2s;
-  -moz-animation: fadeinMainText 2s;
-  -ms-animation: fadeinMainText 2s;
-  -o-animation: fadeinMainText 2s;
-  animation: fadeinMainText 2s;
+  -webkit-animation: fadeinMainText 4s;
+  -moz-animation: fadeinMainText 4s;
+  -ms-animation: fadeinMainText 4s;
+  -o-animation: fadeinMainText 4s;
+  animation: fadeinMainText 4s;
 }
 
 @keyframes fadeinMainText {
