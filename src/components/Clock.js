@@ -27,8 +27,8 @@ function Clock() {
 
   return (
     <div className="App">
-      <div style={{ margin: "1em", display: "flex" }}>
-        <div style={{ display: "flex" }}>
+      <div className="clock-container">
+        <div className="clock-box-cnt">
           {ds < 10 ? (
             <div>
               <Flip value={0} />
@@ -39,8 +39,7 @@ function Clock() {
           <Flip value={ds} />
         </div>
 
-        <div style={{ margin: "10px" }}></div>
-        <div style={{ display: "flex" }}>
+        <div className="clock-box-cnt">
           {hs < 10 ? (
             <div>
               <Flip value={0} />
@@ -51,9 +50,7 @@ function Clock() {
           <Flip value={hs} />
         </div>
 
-        <div style={{ margin: "10px" }}></div>
-
-        <div style={{ display: "flex" }}>
+        <div className="clock-box-cnt">
           {mins < 10 ? (
             <div>
               <Flip value={0} />
@@ -64,9 +61,7 @@ function Clock() {
           <Flip value={mins} />
         </div>
 
-        <div style={{ margin: "10px" }}></div>
-
-        <div style={{ display: "flex" }}>
+        <div className="clock-box-cnt">
           {count < 10 ? (
             <div>
               <Flip value={0} />

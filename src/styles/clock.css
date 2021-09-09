@@ -1,4 +1,33 @@
 .tick {
   font-size: 50px;
   display: flex;
+  /* flex-direction: column; */
+}
+
+.clock-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.clock-box-cnt {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .clock-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .tick {
+    font-size: 12vw;
+    display: flex;
+    /* flex-direction: column; */
+  }
 }

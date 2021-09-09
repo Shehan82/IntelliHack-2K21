@@ -102,7 +102,7 @@ function App() {
       <canvas class="webgl"></canvas>
       <MainSection />
       <div
-        style={{ backgroundColor: "blue", width: "100%", height: 800 }}
+        style={{ backgroundColor: "white", width: "100%", height: 800 }}
       ></div>
       <Timeline />
     </div>

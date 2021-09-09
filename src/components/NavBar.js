@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
 import logo from "../img/logobg.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faBars } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar(props) {
   const [clicked, setclicked] = useState(false);
   return (
     <div className={props.display ? "navbar-cnt navbar-display" : "navbar-cnt"}>
+      {console.log("hellooooooo")}
       <div className="mobile-menu-row">
         <div className="navbar-img-cnt">
           <img src={logo} alt="" className="navbar-img" />
@@ -15,7 +18,9 @@ function NavBar(props) {
             clicked ? setclicked(false) : setclicked(true);
           }}
           className="navbar-menu"
-        ></div>
+        >
+          <FontAwesomeIcon style={{ fontSize: 25 }} icon={faBars} />
+        </div>
       </div>
       <div
         className={

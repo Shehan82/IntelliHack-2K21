@@ -22,8 +22,8 @@
 }
 
 .clock-cnt {
-  margin-left: -20px;
   margin-top: 40px;
+
   -webkit-animation: fadeinClockDiv 5s;
   -moz-animation: fadeinClockDiv 5s;
   -ms-animation: fadeinClockDiv 5s;
@@ -192,5 +192,43 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-section-cnt {
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+  }
+  .main-section-content {
+    margin-left: 0px;
+    align-items: center;
+    /* background-color: red; */
+    position: relative;
+  }
+  .main-section-sub-text {
+    color: white;
+    font-size: 3vw;
+    margin-top: 20px;
+    color: #62ea34;
+  }
+  .main-section-main-text {
+    font-size: 10vw;
+    color: white;
+    /* font-family: "Poppins", sans-serif; */
+  }
+}
+
+@media (max-width: 700px) {
+  .main-section-sub-text {
+    color: white;
+    font-size: 5vw;
+    margin-top: 20px;
+    color: #62ea34;
   }
 }
