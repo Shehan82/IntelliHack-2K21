@@ -60,6 +60,7 @@ function WhyIntelliHackSection() {
           className="carousel"
           indicators={false}
           animation="slide"
+          stopAutoPlayOnHover={false}
         >
           {items.map((item, i) => (
             <Item key={i} item={item} />
