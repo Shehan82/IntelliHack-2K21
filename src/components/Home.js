@@ -3,7 +3,7 @@ import Timeline from "./Timeline";
 import React, { useEffect, useState } from "react";
 import * as THREE from "three";
 import "../styles/backGroundAnimation.css";
-import { ClipLoader, CircleLoader } from "react-spinners";
+import WhyIntelliHackSection from "./WhyIntelliHackSection";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -106,9 +106,7 @@ function Home() {
       <div>
         <canvas class="webgl"></canvas>
         <MainSection />
-        <div
-          style={{ backgroundColor: "white", width: "100%", height: 800 }}
-        ></div>
+        <WhyIntelliHackSection />
         <Timeline />
       </div>
     </div>

@@ -8,7 +8,6 @@ function NavBar(props) {
   const [clicked, setclicked] = useState(false);
   return (
     <div className={props.display ? "navbar-cnt navbar-display" : "navbar-cnt"}>
-      {console.log("hellooooooo")}
       <div className="mobile-menu-row">
         <div className="navbar-img-cnt">
           <img src={logo} alt="" className="navbar-img" />

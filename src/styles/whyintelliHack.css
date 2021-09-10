@@ -1,0 +1,121 @@
+.why-intelliHack-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px 100px 30px 100px; */
+  background-color: white;
+  /* background-color: aqua; */
+}
+
+.carousel {
+  background-image: url("../img/logoWhite.png"); /* The image used */
+  background-color: #dfdfdf; /* Used if the image is unavailable */
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  border-radius: 30px;
+
+  width: 700px;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.why-intellihack-cnt {
+  /* border: 1px solid black; */
+  width: 50%;
+  position: absolute;
+  left: 150px;
+  padding: 40px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide-cnt {
+  /* border: 1px solid yellow; */
+  width: 80%;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.why-intellihack-topic {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.why-intellihack-box {
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid red; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
+}
+
+.why-intellihack-box::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-img {
+  height: 600px;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 1650px) {
+  .why-intellihack-cnt {
+    left: 0px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .carousel {
+    width: 100%;
+  }
+
+  .why-intellihack-cnt {
+    width: 70%;
+    top: 70%;
+    left: auto;
+    right: auto;
+    z-index: 10;
+  }
+
+  .slide-cnt {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 300px;
+  }
+
+  .why-intellihack-topic {
+    font-size: 6vw;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .slide-cnt {
+    width: 90%;
+  }
+
+  .why-intellihack-cnt {
+    top: 80%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .why-intellihack-topic {
+    font-size: 7vw;
+  }
+}
