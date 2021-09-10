@@ -1,30 +1,34 @@
 {
   "files": {
-    "main.css": "/IntelliHack-2K21/static/css/main.789f9d49.chunk.css",
-    "main.js": "/IntelliHack-2K21/static/js/main.d734fb53.chunk.js",
-    "main.js.map": "/IntelliHack-2K21/static/js/main.d734fb53.chunk.js.map",
-    "runtime-main.js": "/IntelliHack-2K21/static/js/runtime-main.3ca018ff.js",
-    "runtime-main.js.map": "/IntelliHack-2K21/static/js/runtime-main.3ca018ff.js.map",
+    "main.css": "/IntelliHack-2K21/static/css/main.17c38802.chunk.css",
+    "main.js": "/IntelliHack-2K21/static/js/main.bd1b2e8e.chunk.js",
+    "main.js.map": "/IntelliHack-2K21/static/js/main.bd1b2e8e.chunk.js.map",
+    "runtime-main.js": "/IntelliHack-2K21/static/js/runtime-main.2634c521.js",
+    "runtime-main.js.map": "/IntelliHack-2K21/static/js/runtime-main.2634c521.js.map",
     "static/css/2.58a3595b.chunk.css": "/IntelliHack-2K21/static/css/2.58a3595b.chunk.css",
-    "static/js/2.87c46b0f.chunk.js": "/IntelliHack-2K21/static/js/2.87c46b0f.chunk.js",
-    "static/js/2.87c46b0f.chunk.js.map": "/IntelliHack-2K21/static/js/2.87c46b0f.chunk.js.map",
-    "static/js/3.15998a6d.chunk.js": "/IntelliHack-2K21/static/js/3.15998a6d.chunk.js",
-    "static/js/3.15998a6d.chunk.js.map": "/IntelliHack-2K21/static/js/3.15998a6d.chunk.js.map",
+    "static/js/2.43bd6630.chunk.js": "/IntelliHack-2K21/static/js/2.43bd6630.chunk.js",
+    "static/js/2.43bd6630.chunk.js.map": "/IntelliHack-2K21/static/js/2.43bd6630.chunk.js.map",
+    "static/js/3.1228fe60.chunk.js": "/IntelliHack-2K21/static/js/3.1228fe60.chunk.js",
+    "static/js/3.1228fe60.chunk.js.map": "/IntelliHack-2K21/static/js/3.1228fe60.chunk.js.map",
     "index.html": "/IntelliHack-2K21/index.html",
     "static/css/2.58a3595b.chunk.css.map": "/IntelliHack-2K21/static/css/2.58a3595b.chunk.css.map",
-    "static/css/main.789f9d49.chunk.css.map": "/IntelliHack-2K21/static/css/main.789f9d49.chunk.css.map",
-    "static/js/2.87c46b0f.chunk.js.LICENSE.txt": "/IntelliHack-2K21/static/js/2.87c46b0f.chunk.js.LICENSE.txt",
+    "static/css/main.17c38802.chunk.css.map": "/IntelliHack-2K21/static/css/main.17c38802.chunk.css.map",
+    "static/js/2.43bd6630.chunk.js.LICENSE.txt": "/IntelliHack-2K21/static/js/2.43bd6630.chunk.js.LICENSE.txt",
     "static/media/mainSection.css": "/IntelliHack-2K21/static/media/bg2.87aab9cc.jpg",
     "static/media/logo.6ce24c58.svg": "/IntelliHack-2K21/static/media/logo.6ce24c58.svg",
     "static/media/logo.bdf1da0b.png": "/IntelliHack-2K21/static/media/logo.bdf1da0b.png",
-    "static/media/logoWhite.7a0ede4d.png": "/IntelliHack-2K21/static/media/logoWhite.7a0ede4d.png",
-    "static/media/logobg.bc0eeec0.png": "/IntelliHack-2K21/static/media/logobg.bc0eeec0.png"
+    "static/media/whyintelliHack.css": "/IntelliHack-2K21/static/media/logoWhite.7a0ede4d.png",
+    "static/media/logobg.bc0eeec0.png": "/IntelliHack-2K21/static/media/logobg.bc0eeec0.png",
+    "static/media/photo1.58e55693.jpg": "/IntelliHack-2K21/static/media/photo1.58e55693.jpg",
+    "static/media/photo2.f0556e37.jpg": "/IntelliHack-2K21/static/media/photo2.f0556e37.jpg",
+    "static/media/photo4.f559a1eb.jpg": "/IntelliHack-2K21/static/media/photo4.f559a1eb.jpg",
+    "static/media/photo6.d3476d3e.jpg": "/IntelliHack-2K21/static/media/photo6.d3476d3e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ca018ff.js",
+    "static/js/runtime-main.2634c521.js",
     "static/css/2.58a3595b.chunk.css",
-    "static/js/2.87c46b0f.chunk.js",
-    "static/css/main.789f9d49.chunk.css",
-    "static/js/main.d734fb53.chunk.js"
+    "static/js/2.43bd6630.chunk.js",
+    "static/css/main.17c38802.chunk.css",
+    "static/js/main.bd1b2e8e.chunk.js"
   ]
 }
