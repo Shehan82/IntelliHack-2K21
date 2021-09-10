@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/IntelliHack-2K21/static/css/main.17c38802.chunk.css",
-    "main.js": "/IntelliHack-2K21/static/js/main.bd1b2e8e.chunk.js",
-    "main.js.map": "/IntelliHack-2K21/static/js/main.bd1b2e8e.chunk.js.map",
+    "main.js": "/IntelliHack-2K21/static/js/main.7a6c02f1.chunk.js",
+    "main.js.map": "/IntelliHack-2K21/static/js/main.7a6c02f1.chunk.js.map",
     "runtime-main.js": "/IntelliHack-2K21/static/js/runtime-main.2634c521.js",
     "runtime-main.js.map": "/IntelliHack-2K21/static/js/runtime-main.2634c521.js.map",
     "static/css/2.58a3595b.chunk.css": "/IntelliHack-2K21/static/css/2.58a3595b.chunk.css",
@@ -29,6 +29,6 @@
     "static/css/2.58a3595b.chunk.css",
     "static/js/2.43bd6630.chunk.js",
     "static/css/main.17c38802.chunk.css",
-    "static/js/main.bd1b2e8e.chunk.js"
+    "static/js/main.7a6c02f1.chunk.js"
   ]
 }
