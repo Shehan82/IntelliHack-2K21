@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* .prizes-row {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+} */
+.header-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.header-name > div {
+    background-color: white;
+    /* width: 100%; */
+    /* align-items: center;     */
+    /* justify-content:center */
+    line-height: 100px;
+    font-size: 36px;
+    font-weight:bold;
+}
+.winners-row {
+    display: flex;
+    /* background-color: yellowgreen; */
+    margin-top:50px;
+    text-align: center;
+    
+}
+.third-place {
+    /* background-color: red; */
+    /* padding-left: 10px; */
+    width: 100%;
+    margin: 0 50px;
+    /* margin: 50px 0; */
+}
+.third-place h1 {
+    color: white;
+    font-weight: bold;
+}
+.third-card-img-top {
+    padding: 0 50px;
+    width: 300px;
+    height: 300px;
+    /* transition: width 1s,height 1s; */
+    
+}
+.third_card-detail {
+    font-weight: bold;
+    font-size: 30px;
+    /* background-color:white; */
+    background: linear-gradient(to right, #b75d31 50%, white 50%);
+    padding : 5px 0;
+    border-radius: 5px;
+    box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 70px;
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all 0.5s ease-in-out;
+    /* overflow: hidden;*/
+    /* z-index: -1; */
+}
+.third_card-detail:hover{
+    /* -webkit-transition: background-color 2s ease-out; */
+    /* -moz-transition: background-color 2s ease-out; */
+    background-position: left bottom;
+    cursor: pointer;
+    color: white;
+}
+
+.first-place {
+    /* background-color:orangered; */
+    /* padding-left: 10px; */
+    width: 100%;
+    margin: 0 50px;
+}
+.first-place h1 {
+    color: white;
+    font-weight: bold;
+}
+.second_card-detail {
+    font-weight: bold;
+    font-size: 30px;
+    /* background-color:white; */
+    background: linear-gradient(to right, #fec732 50%, white 50%);
+    padding : 5px 0;
+    border-radius: 5px;
+    box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 70px;
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all 0.5s ease-in-out;
+    /* overflow: hidden;
+    z-index: 2; */  
+}
+.second_card-detail:hover{
+    /* -webkit-transition: background-color 2s ease-out; */
+    /* -moz-transition: background-color 2s ease-out; */
+    background-position: left bottom;
+    cursor: pointer;
+    color: white;
+}
+
+
+.second-place {
+    /* background-color: blue; */
+    /* padding-left: 10px; */
+    width: 100%;
+    margin: 0 50px;
+}
+.second-place h1 {
+    color: white;
+    font-weight: bold;
+}
+.first_card-detail {
+    font-weight: bold;
+    font-size: 30px;
+    /* background-color:white; */
+    background: linear-gradient(to right, #6a7583 50%, white 50%);
+    padding : 5px 0;
+    border-radius: 5px;
+    box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 70px;
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all 0.5s ease-in-out;
+    /* overflow: hidden;
+    z-index: 2; */  
+}
+.first_card-detail:hover{
+    /* -webkit-transition: background-color 2s ease-out; */
+    /* -moz-transition: background-color 2s ease-out; */
+    background-position: left bottom;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .winners-row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        
+    }
+    .first_card-detail, .second_card-detail, .third_card-detail {
+        margin: 10px 125px;
+    }
+
+    .first-place {
+        /* background-color: #b75d31; */
+        order: 0;
+        /* z-index: 2; */
+        /* width: 100%; */
+        margin: 0;
+    }
+    .second-place {
+        /* background-color:#fec732; */
+        order: 1;
+        /* width: 100%; */
+        /* z-index: 2; */
+        margin: 0;
+    }
+    .third-place {
+        /* background-color:aqua; */
+        order: 2;
+        /* width: 100%; */
+        /* z-index: 2; */
+        margin: 0;
+    }
+}
+
+
+/* titiles */
+.titles-row-master {
+    display: flex;
+    /* background-color: yellowgreen; */
+    margin-top:75px;
+    text-align:justify;
+    justify-content: center;
+}
+.titles-row-most-popular {
+    display: flex;
+    margin-top:75px;
+    text-align:justify;
+    justify-content: center;
+}
+
+.title-card-img-top1 {
+    /* padding: 0 50px; */
+    width: 300px;
+    height: 250px;
+    /* transition: width 1s,height 1s; */
+    
+}
+.title-card-img-top2 {
+    width: 300px;
+    height: 250px;
+}
+
+.intellihack-master-image {
+    background-color: blue;
+    margin: 0 50px;
+    width: 20%;
+}
+.most-popular-team-image {
+    background-color: blue;
+    margin: 0 50px;
+    width: 20%;
+}
+
+.most-popular-team {
+    /* display: flex; */
+    background-color: white;
+    margin: 0 50px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.2);
+
+    padding: 25px 25px;
+}
+.intellihack-master {
+    background-color: white;
+    margin: 0 50px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 8px 2px 8px rgba(0, 0, 0, 0.2);
+
+    padding: 25px 25px;
+}
+
+@media (max-width: 768px){
+    .titles-row-master{
+        flex-direction: column;
+        margin-top: 0;
+        
+        align-items: center;
+
+    }
+    .titles-row-most-popular {
+        flex-direction: column;
+        margin-top: 0;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .title-card-img-top1 {
+        width: 225px;
+        height: 175px;
+    }
+    .title-card-img-top2 {
+        width: 225px;
+        height: 175px;
+    }
+    .intellihack-master-image {
+        /* text-align:center; */
+        width: 50%;
+        margin-top: 50px;
+        order: 0;
+    }
+    .intellihack-master {
+        margin-top: 25px;
+        order: 1;
+        width: 80%;
+        /* align-items: center; */
+    }
+    .most-popular-team {
+        width: 80%;
+        margin-top: 25px;
+        order: 1;
+        /* align-items: center; */
+    }
+    .most-popular-team-image {
+        width: 50%;
+        margin-top: 50px;
+        order: 0;
+    }
+}

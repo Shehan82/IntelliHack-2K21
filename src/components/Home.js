@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import * as THREE from "three";
 import "../styles/backGroundAnimation.css";
 import WhyIntelliHackSection from "./WhyIntelliHackSection";
+import Price from "./Price";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -108,6 +109,7 @@ function Home() {
         <MainSection />
         <WhyIntelliHackSection />
         <Timeline />
+        <Price />
       </div>
     </div>
   );
