@@ -29,7 +29,10 @@
     /* background-color: yellowgreen; */
     margin-top:50px;
     text-align: center;
-    
+    /* flex: 0 0 100%;
+    max-width: 100%; */
+    /* flex-wrap: wrap; */
+    /* flex-shrink: 4;     */
 }
 .third-place {
     /* background-color: red; */
@@ -43,9 +46,10 @@
     font-weight: bold;
 }
 .third-card-img-top {
-    padding: 0 50px;
+    /* padding: 0 50px; */
     width: 300px;
     height: 300px;
+    justify-content: center;
     /* transition: width 1s,height 1s; */
     
 }
@@ -138,42 +142,103 @@
     cursor: pointer;
     color: white;
 }
-
-@media (max-width: 768px){
+@media (max-width: 1500px){
     .winners-row {
-        flex-direction: column;
+        flex-wrap:nowrap;
         margin-left: 0;
         margin-right: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .first_card-detail, .second_card-detail, .third_card-detail {
+        /* margin: 10px 500px; */
+        /* margin: 0; */
+        /* padding: 2px 0; */
+        font-size: 24px;
+        /* box-sizing: 50%; */
+    }
+
+    .third-card-img-top {
+        width: 275px;
+        height: 275px;
+        /* background-color: #b75d31; */
+        padding-left: 0;
+        justify-content: center;
+    }
+    .first-place, .second-place, .third-place {
+        margin: 0 15px;
+    }
+}
+
+
+@media (max-width: 1000px){
+    .winners-row {
+        flex-direction: column;
+        /* margin-left: 0;
+        margin-right: 0; */
+        margin: 0;
         text-align: center;
         
     }
     .first_card-detail, .second_card-detail, .third_card-detail {
-        margin: 10px 125px;
+        margin: 10px 300px;
+        /* padding: 2px 0; */
+        font-size: 24px;
+
     }
 
+    .third-card-img-top {
+        width: 220px;
+        height: 220px;
+        justify-content: center;
+    }
     .first-place {
         /* background-color: #b75d31; */
+        margin: 0 15px;
         order: 0;
         /* z-index: 2; */
         /* width: 100%; */
         margin: 0;
+        /* flex: 0 0 33.33333%;
+        max-width: 33.33333%; */
     }
     .second-place {
         /* background-color:#fec732; */
+        margin: 0 15px;
         order: 1;
         /* width: 100%; */
         /* z-index: 2; */
         margin: 0;
+        /* flex: 0 0 33.33333%;
+        max-width: 33.33333%; */
     }
     .third-place {
         /* background-color:aqua; */
+        margin: 0 15px;
         order: 2;
         /* width: 100%; */
         /* z-index: 2; */
         margin: 0;
+        /* flex: 0 0 33.33333%;
+        max-width: 33.33333%; */
     }
 }
+@media(max-width:768px){
+    .first_card-detail, .second_card-detail, .third_card-detail {
+        margin: 10px 225px;
+        /* padding: 2px 0; */
+        font-size: 24px;
 
+    }
+}
+@media(max-width:629px){
+    .first_card-detail, .second_card-detail, .third_card-detail {
+        margin: 10px 150px;
+        /* padding: 2px 0; */
+        font-size: 24px;
+
+    }
+}
 
 /* titiles */
 .titles-row-master {
@@ -203,12 +268,12 @@
 }
 
 .intellihack-master-image {
-    background-color: blue;
+    /* background-color: blue; */
     margin: 0 50px;
     width: 20%;
 }
 .most-popular-team-image {
-    background-color: blue;
+    /* background-color: blue; */
     margin: 0 50px;
     width: 20%;
 }
@@ -232,14 +297,24 @@
 
     padding: 25px 25px;
 }
-
+@media(max-width:1000px){
+    .title-card-img-top2 {
+        width: 250px;
+        height: 225px;
+        /* text-align: center; */
+        text-align: center;
+    }
+    .title-card-img-top1 {
+        width: 250px;
+        height: 225px;
+        text-align: center;
+    }
+}
 @media (max-width: 768px){
     .titles-row-master{
         flex-direction: column;
         margin-top: 0;
-        
         align-items: center;
-
     }
     .titles-row-most-popular {
         flex-direction: column;
@@ -250,13 +325,15 @@
     .title-card-img-top1 {
         width: 225px;
         height: 175px;
+        text-align: center;
     }
     .title-card-img-top2 {
         width: 225px;
         height: 175px;
+        text-align: center;
     }
     .intellihack-master-image {
-        /* text-align:center; */
+        text-align:center;
         width: 50%;
         margin-top: 50px;
         order: 0;
@@ -277,5 +354,6 @@
         width: 50%;
         margin-top: 50px;
         order: 0;
+        text-align:center;
     }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import First_Place from '../img/first_place.png';
 import Second_Place from '../img/second_place.png';
 import Third_Place from '../img/third_place.png';
-import Titles from '../img/titles.png';
+import Titles from '../img/titles1.png';
 import "../styles/price.css";
 
 const Price = () => {
