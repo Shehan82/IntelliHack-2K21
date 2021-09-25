@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import * as THREE from "three";
 import "../styles/backGroundAnimation.css";
 import WhyIntelliHackSection from "./WhyIntelliHackSection";
+import WhatTheySay from "./WhatTheySay";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -107,7 +108,8 @@ function Home() {
         <canvas class="webgl"></canvas>
         <MainSection />
         <WhyIntelliHackSection />
-        <Timeline />
+        <Timeline />  
+        <WhatTheySay />
       </div>
     </div>
   );
