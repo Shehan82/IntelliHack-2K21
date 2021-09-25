@@ -1,0 +1,51 @@
+.ps-main {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  /* padding: 50px; */
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.ps-title {
+  font-size: 60px;
+
+  /* border: 1px solid black; */
+}
+
+.ps-sub-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.ps-btn-cnt {
+  margin-top: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 50px;
+  margin-bottom: 120px;
+}
+
+.ps-btn {
+  background-color: #041149;
+  height: 70px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ps-btn:hover {
+  /* background-color: #091f81; */
+  box-shadow: 0px 0px 65px -16px rgba(0, 0, 0, 0.79);
+}

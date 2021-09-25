@@ -5,6 +5,8 @@ import * as THREE from "three";
 import "../styles/backGroundAnimation.css";
 import WhyIntelliHackSection from "./WhyIntelliHackSection";
 import WhatTheySay from "./WhatTheySay";
+import PraposalSubmission from "./PraposalSubmission";
+import Sponsers from "./Sponsers";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -108,7 +110,10 @@ function Home() {
         <canvas class="webgl"></canvas>
         <MainSection />
         <WhyIntelliHackSection />
-        <Timeline />  
+        <Timeline />
+
+        <PraposalSubmission />
+        <Sponsers />
         <WhatTheySay />
       </div>
     </div>

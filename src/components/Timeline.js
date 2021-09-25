@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/timeline.css";
 import { ReactComponent as LogoIcon } from "../logo.svg";
 import timelineElements from "./timelineElements";
+import logo from "../img/logoWhite.png";
 
 import {
   VerticalTimeline,
@@ -10,7 +11,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function Timeline() {
-  let logoIconStyle = { background: "#06D6A0" };
+  let logoIconStyle = { background: "black" };
 
   const [animate, setanimate] = useState(false);
   useEffect(() => {
@@ -30,7 +31,7 @@ function Timeline() {
 
   return (
     <div>
-      <h2 className="title">Timeline</h2>
+      <h2 className="title">HOW IT WORKS</h2>
       <VerticalTimeline animate={animate}>
         {timelineElements.map((element) => {
           return (

@@ -15,12 +15,12 @@ import {
 function App() {
   const [loading, setloading] = useState(false);
 
-  useEffect(() => {
-    setloading(true);
-    setTimeout(() => {
-      setloading(false);
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setloading(true);
+  //   setTimeout(() => {
+  //     setloading(false);
+  //   }, 5000);
+  // }, []);
 
   return (
     <div>
@@ -39,7 +39,6 @@ function App() {
         </div>
       ) : (
         <Home />
-        
       )}
     </div>
   );
