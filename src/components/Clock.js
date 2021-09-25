@@ -4,7 +4,7 @@ import "../styles/clock.css";
 import Flip from "./Flip";
 
 function Clock() {
-  const countdown = new Date("Sep 20, 2021 00:00:00").getTime();
+  const countdown = new Date("Nov 20, 2021 00:00:00").getTime();
   const [count, setCount] = useState(60);
   const [sec, setsec] = useState(0);
   const [mins, setmins] = useState(0);
