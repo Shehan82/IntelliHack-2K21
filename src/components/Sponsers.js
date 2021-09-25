@@ -8,7 +8,7 @@ import N9X from "../img/99x.png";
 function Sponsers() {
   return (
     <div className="spn-main">
-      <div className="ps-sponser-title">Sponsers for IntelliHack 2k21</div>
+      <div className="ps-sponser-title">Sponsers</div>
       <div className="ps-main-sponser">
         <div className="sponser-title">Official platinum partner</div>
         <img className="sponser-img" src={PickMeLogo} alt="" />
