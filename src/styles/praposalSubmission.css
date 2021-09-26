@@ -2,8 +2,9 @@
   width: 100%;
   height: fit-content;
   background-color: #f3f4f6;
-  height: 60vh;
-  /* padding-top: 200px; */
+  height: fit-content;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +13,7 @@
 }
 
 .ps-title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   margin-bottom: 50px;
 
@@ -29,6 +30,7 @@
   margin-top: 100px;
   /* border: 1px solid black; */
   display: flex;
+  flex-direction: row;
   gap: 50px;
 }
 
@@ -50,4 +52,42 @@
 .ps-btn:hover {
   /* background-color: #091f81; */
   box-shadow: 0px 0px 65px -16px rgba(0, 0, 0, 0.79);
+}
+
+@media (max-width: 1200px) {
+  .ps-title {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .ps-btn-cnt {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  .ps-title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .ps-title {
+    /* border: 1px solid black; */
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .ps-sub-title {
+    font-size: 4vw;
+  }
+
+  .ps-btn {
+    width: 80vw;
+    font-size: 4vw;
+    height: 13vw;
+  }
 }
