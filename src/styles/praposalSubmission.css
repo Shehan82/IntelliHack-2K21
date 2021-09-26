@@ -3,8 +3,8 @@
   height: fit-content;
   background-color: #f3f4f6;
   height: fit-content;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
 .ps-title {
   font-size: 50px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
   /* border: 1px solid black; */
 }
