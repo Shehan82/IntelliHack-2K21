@@ -31,7 +31,7 @@ function Timeline() {
 
   return (
     <div>
-      <h2 className="title">HOW IT WORKS</h2>
+      <h2 className="title">How It Works</h2>
       <VerticalTimeline animate={animate}>
         {timelineElements.map((element) => {
           return (
