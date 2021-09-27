@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/IntelliHack-2K21/static/css/main.8f9c4198.chunk.css",
-    "main.js": "/IntelliHack-2K21/static/js/main.b1cc2dba.chunk.js",
-    "main.js.map": "/IntelliHack-2K21/static/js/main.b1cc2dba.chunk.js.map",
+    "main.css": "/IntelliHack-2K21/static/css/main.2faf296f.chunk.css",
+    "main.js": "/IntelliHack-2K21/static/js/main.821ca3d2.chunk.js",
+    "main.js.map": "/IntelliHack-2K21/static/js/main.821ca3d2.chunk.js.map",
     "runtime-main.js": "/IntelliHack-2K21/static/js/runtime-main.7eaa88b6.js",
     "runtime-main.js.map": "/IntelliHack-2K21/static/js/runtime-main.7eaa88b6.js.map",
     "static/css/2.8c480805.chunk.css": "/IntelliHack-2K21/static/css/2.8c480805.chunk.css",
-    "static/js/2.87ba3ef4.chunk.js": "/IntelliHack-2K21/static/js/2.87ba3ef4.chunk.js",
-    "static/js/2.87ba3ef4.chunk.js.map": "/IntelliHack-2K21/static/js/2.87ba3ef4.chunk.js.map",
+    "static/js/2.ce694551.chunk.js": "/IntelliHack-2K21/static/js/2.ce694551.chunk.js",
+    "static/js/2.ce694551.chunk.js.map": "/IntelliHack-2K21/static/js/2.ce694551.chunk.js.map",
     "static/js/3.eeb9b712.chunk.js": "/IntelliHack-2K21/static/js/3.eeb9b712.chunk.js",
     "static/js/3.eeb9b712.chunk.js.map": "/IntelliHack-2K21/static/js/3.eeb9b712.chunk.js.map",
     "index.html": "/IntelliHack-2K21/index.html",
     "static/css/2.8c480805.chunk.css.map": "/IntelliHack-2K21/static/css/2.8c480805.chunk.css.map",
-    "static/css/main.8f9c4198.chunk.css.map": "/IntelliHack-2K21/static/css/main.8f9c4198.chunk.css.map",
-    "static/js/2.87ba3ef4.chunk.js.LICENSE.txt": "/IntelliHack-2K21/static/js/2.87ba3ef4.chunk.js.LICENSE.txt",
+    "static/css/main.2faf296f.chunk.css.map": "/IntelliHack-2K21/static/css/main.2faf296f.chunk.css.map",
+    "static/js/2.ce694551.chunk.js.LICENSE.txt": "/IntelliHack-2K21/static/js/2.ce694551.chunk.js.LICENSE.txt",
     "static/media/GDG_Logo.e8474af4.png": "/IntelliHack-2K21/static/media/GDG_Logo.e8474af4.png",
     "static/media/PickMe.33f664c2.png": "/IntelliHack-2K21/static/media/PickMe.33f664c2.png",
     "static/media/mainSection.css": "/IntelliHack-2K21/static/media/bg2.87aab9cc.jpg",
@@ -35,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.7eaa88b6.js",
     "static/css/2.8c480805.chunk.css",
-    "static/js/2.87ba3ef4.chunk.js",
-    "static/css/main.8f9c4198.chunk.css",
-    "static/js/main.b1cc2dba.chunk.js"
+    "static/js/2.ce694551.chunk.js",
+    "static/css/main.2faf296f.chunk.css",
+    "static/js/main.821ca3d2.chunk.js"
   ]
 }
