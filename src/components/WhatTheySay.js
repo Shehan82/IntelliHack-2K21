@@ -117,6 +117,18 @@ const WhatTheySay = ({ reference }) => {
                   >
                     {item.Disc2}
                   </Typography>
+
+                  <Typography
+                    style={{
+                      marginTop: 5,
+                      color: "white",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                    variant="body2"
+                    color="text.secondary"
+                  >
+                    {item.Disc3}
+                  </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
