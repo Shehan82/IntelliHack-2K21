@@ -40,13 +40,16 @@ function NavBar(props) {
         <div onClick={props.praposalSubmissionClick} className="mobile-row">
           Submissions
         </div>
+        <div onClick={props.pricesClick} className="mobile-row">
+          Prices
+        </div>
         <div onClick={props.sponsersClick} className="mobile-row">
           Sponsors
         </div>
         <div onClick={props.whatTheySayClick} className="mobile-row">
           What They Say
         </div>
-        <div className="mobile-row">Prices</div>
+
         <div className="mobile-row">About Us</div>
       </div>
 
@@ -67,6 +70,11 @@ function NavBar(props) {
         </div>
 
         <div className="navbar-item-cnt">
+          <div onClick={props.pricesClick}>Prices</div>
+          <div className="navbar-not-clicked"></div>
+        </div>
+
+        <div className="navbar-item-cnt">
           <div onClick={props.sponsersClick}>Sponsors</div>
           <div className="navbar-not-clicked"></div>
         </div>
@@ -75,12 +83,9 @@ function NavBar(props) {
           <div onClick={props.whatTheySayClick}>What They Say</div>
           <div className="navbar-not-clicked"></div>
         </div>
+
         <div className="navbar-item-cnt">
-          <div>Prices</div>
-          <div className="navbar-not-clicked"></div>
-        </div>
-        <div className="navbar-item-cnt">
-          <div>About Us</div>
+          <div>About</div>
           <div className="navbar-not-clicked"></div>
         </div>
       </div>

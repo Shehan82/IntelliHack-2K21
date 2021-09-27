@@ -15,6 +15,7 @@ function MainSection({
   praposalSubmissionClick,
   whatTheySayClick,
   sponsersClick,
+  pricesClick,
 }) {
   const [display, setdisplay] = useState(false);
 
@@ -37,6 +38,7 @@ function MainSection({
           praposalSubmissionClick={praposalSubmissionClick}
           whatTheySayClick={whatTheySayClick}
           sponsersClick={sponsersClick}
+          pricesClick={pricesClick}
           display={display}
         />
         <div className="main-section-content">

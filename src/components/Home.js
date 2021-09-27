@@ -115,6 +115,7 @@ function Home() {
   const praposalSubmission = useRef();
   const whatTheySay = useRef();
   const sponsers = useRef();
+  const prices = useRef();
 
   const el2 = useRef();
 
@@ -130,12 +131,13 @@ function Home() {
           praposalSubmissionClick={() => scrollToDiv(praposalSubmission)}
           whatTheySayClick={() => scrollToDiv(whatTheySay)}
           sponsersClick={() => scrollToDiv(sponsers)}
+          pricesClick={() => scrollToDiv(prices)}
         />
         <WhyIntelliHackSection reference={whyintelliHack} />
         <Timeline reference={timeline} />
 
         <PraposalSubmission reference={praposalSubmission} />
-        <Price />
+        <Price reference={prices} />
         <Sponsers reference={sponsers} />
         <WhatTheySay reference={whatTheySay} />
       </div>

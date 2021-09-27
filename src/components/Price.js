@@ -8,9 +8,9 @@ import Flip from "react-reveal/Flip";
 import Roll from "react-reveal/Roll";
 import Slide from "react-reveal/Slide";
 
-const Price = () => {
+const Price = ({ reference }) => {
   return (
-    <div className="prizes-row">
+    <div ref={reference} className="prizes-row">
       <div className="header-name">
         <div>Prices</div>
       </div>
