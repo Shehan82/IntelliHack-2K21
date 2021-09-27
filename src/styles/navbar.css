@@ -21,6 +21,7 @@
 
 .navbar-img-cnt {
   margin-left: 200px;
+  cursor: pointer;
   transition: all 0.5s ease 0.15s;
 }
 

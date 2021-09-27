@@ -9,7 +9,7 @@ function NavBar(props) {
   return (
     <div className={props.display ? "navbar-cnt navbar-display" : "navbar-cnt"}>
       <div className="mobile-menu-row">
-        <div className="navbar-img-cnt">
+        <div onClick={props.mainSectionClick} className="navbar-img-cnt">
           <img src={logo} alt="" className="navbar-img" />
         </div>
         <div
