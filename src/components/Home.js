@@ -7,6 +7,7 @@ import WhyIntelliHackSection from "./WhyIntelliHackSection";
 import WhatTheySay from "./WhatTheySay";
 import PraposalSubmission from "./PraposalSubmission";
 import Sponsers from "./Sponsers";
+import Price from "./Price";
 import { useRef } from "react";
 
 function Home() {
@@ -132,7 +133,9 @@ function Home() {
         />
         <WhyIntelliHackSection reference={whyintelliHack} />
         <Timeline reference={timeline} />
+
         <PraposalSubmission reference={praposalSubmission} />
+        <Price />
         <Sponsers reference={sponsers} />
         <WhatTheySay reference={whatTheySay} />
       </div>
