@@ -36,7 +36,7 @@ const Price = () => {
           </div>
           <div className="second_card-detail">Rs. 75000</div>
         </div>
-
+        {/* #041149 */}
         <div className="second-place">
           <h1>Second Place</h1>
           <div className="third_card">
