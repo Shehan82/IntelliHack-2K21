@@ -109,7 +109,6 @@ function Home() {
         <MainSection />
         <WhyIntelliHackSection />
         <Timeline />
-        <Price />
       </div>
     </div>
   );
