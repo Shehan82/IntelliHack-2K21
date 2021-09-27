@@ -1,10 +1,20 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
- import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../styles/whatSay.css";
-import {  multiData } from "./whatSayData";
+import { multiData } from "./whatSayData";
+import Ramith from "../img/ramith.png";
+import Sula from "../img/sula.png";
+import Dhanu from "../img/dhanu.png";
+import Shashika from "../img/shashika.png";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
-import { Card, CardActionArea, CardContent ,CardMedia , Typography   } from "@material-ui/core";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@material-ui/core";
 import { red } from "@material-ui/core/colors";
 
 const PreviousBtn = (props) => {
@@ -35,62 +45,71 @@ const carouselProperties = {
   centerPadding: "170px",
   responsive: [
     {
-      breakpoint: 426,
+      breakpoint: 500,
       settings: {
         slidesToShow: 1,
         centerMode: false,
       },
     },
     {
-      breakpoint: 769,
+      breakpoint: 850,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         centerMode: false,
       },
     },
     {
-      breakpoint: 1025,
+      breakpoint: 1300,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         centerMode: false,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
       },
     },
   ],
 };
 
-const WhatTheySay = () => {
+const WhatTheySay = ({ reference }) => {
   return (
-    <div style={{ margin: "30px" }} className="slide">
-      <h1>Basic carousel</h1>
-    
+    <div
+      ref={reference}
+      style={{ backgroundColor: "#f3f4f6" }}
+      className="slide"
+    >
+      <div className="whatTheySay-topic">What they say</div>
       <Slider {...carouselProperties}>
         {multiData.map((item) => (
-        <div style={{padding:4}}>
-        <Card sx={{ maxWidth: 345}}style={{margin:10}}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image={item.Image}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {item.Name}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {item.Disc}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        </div>
+          <div style={{ padding: 4 }} className="card-crs">
+            <Card
+              sx={{ maxWidth: 345 }}
+              style={{ margin: 20, backgroundColor: "#041149" }}
+            >
+              <CardActionArea>
+                <CardMedia component="img" height="350" image={item.Image} />
+                <CardContent>
+                  <Typography
+                    style={{ color: "white" }}
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                  >
+                    {item.Name}
+                  </Typography>
+                  <Typography
+                    style={{ color: "white" }}
+                    variant="body2"
+                    color="text.secondary"
+                  >
+                    {item.Disc}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
         ))}
       </Slider>
-      </div>
-    
+    </div>
   );
 };
-
 
 export default WhatTheySay;

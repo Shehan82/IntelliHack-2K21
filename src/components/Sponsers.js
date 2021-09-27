@@ -5,9 +5,9 @@ import LsegLogo from "../img/lseg_logo.png";
 import GDGLogo from "../img/GDG_Logo.png";
 import N9X from "../img/99x.png";
 
-function Sponsers() {
+function Sponsers({ reference }) {
   return (
-    <div className="spn-main">
+    <div ref={reference} className="spn-main">
       <div className="ps-sponser-title">Sponsors</div>
       <div className="ps-main-sponser">
         <div className="sponser-title">Official platinum partner</div>

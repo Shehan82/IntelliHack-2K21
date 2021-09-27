@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/praposalSubmission.css";
 
-function PraposalSubmission() {
+function PraposalSubmission({ reference }) {
   return (
-    <div className="ps-main">
+    <div ref={reference} className="ps-main">
       <div className="ps-title">Praposals Submissions are open now!</div>
       <div className="ps-sub-title">Make sure to apply before 2021-08-06</div>
       <div className="ps-btn-cnt">

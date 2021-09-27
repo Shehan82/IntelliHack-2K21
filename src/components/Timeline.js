@@ -10,7 +10,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-function Timeline() {
+function Timeline({ reference }) {
   let logoIconStyle = { background: "black" };
 
   const [animate, setanimate] = useState(false);
@@ -30,7 +30,7 @@ function Timeline() {
   window.addEventListener("resize", updateSize);
 
   return (
-    <div>
+    <div className="timeline-main-cnt" ref={reference}>
       <h2 className="title">How It Works</h2>
       <VerticalTimeline animate={animate}>
         {timelineElements.map((element) => {

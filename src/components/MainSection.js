@@ -7,7 +7,15 @@ import NavBar from "./NavBar";
 import Typewriter from "typewriter-effect";
 import Logo from "../img/logoWhite.png";
 
-function MainSection() {
+function MainSection({
+  reference,
+  mainSectionClick,
+  whyintelliHackClick,
+  timelineClick,
+  praposalSubmissionClick,
+  whatTheySayClick,
+  sponsersClick,
+}) {
   const [display, setdisplay] = useState(false);
 
   const displayNavBar = () => {
@@ -20,9 +28,17 @@ function MainSection() {
 
   window.addEventListener("scroll", displayNavBar);
   return (
-    <div>
+    <div ref={reference}>
       <div className="main-section-cnt">
-        <NavBar display={display} />
+        <NavBar
+          mainSectionClick={mainSectionClick}
+          whyintelliHackClick={whyintelliHackClick}
+          timelineClick={timelineClick}
+          praposalSubmissionClick={praposalSubmissionClick}
+          whatTheySayClick={whatTheySayClick}
+          sponsersClick={sponsersClick}
+          display={display}
+        />
         <div className="main-section-content">
           <img className="white-logo" src={Logo} alt="" />
           {/* <div className="main-section-main-text">IntelliHack'21</div> */}

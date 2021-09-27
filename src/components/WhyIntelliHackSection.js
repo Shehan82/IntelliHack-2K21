@@ -31,9 +31,9 @@ var blaaa = () => {
 
 window.addEventListener("resize", blaaa);
 
-function WhyIntelliHackSection() {
+function WhyIntelliHackSection({ reference }) {
   return (
-    <div className="why-intelliHack-section">
+    <div ref={reference} className="why-intelliHack-section">
       <div className="slide-cnt">
         <div className="why-intellihack-cnt">
           <div className="why-intellihack-box">

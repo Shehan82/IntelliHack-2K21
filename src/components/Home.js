@@ -7,6 +7,7 @@ import WhyIntelliHackSection from "./WhyIntelliHackSection";
 import WhatTheySay from "./WhatTheySay";
 import PraposalSubmission from "./PraposalSubmission";
 import Sponsers from "./Sponsers";
+import { useRef } from "react";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -104,17 +105,36 @@ function Home() {
     tick();
   }, []);
 
+  // const scrollToDiv = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const scrollToDiv = (ref) =>
+    window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" });
+  const mainSection = useRef();
+  const whyintelliHack = useRef();
+  const timeline = useRef();
+  const praposalSubmission = useRef();
+  const whatTheySay = useRef();
+  const sponsers = useRef();
+
+  const el2 = useRef();
+
   return (
     <div>
       <div>
         <canvas class="webgl"></canvas>
-        <MainSection />
-        <WhyIntelliHackSection />
-        <Timeline />
-
-        <PraposalSubmission />
-        <Sponsers />
-        <WhatTheySay />
+        <MainSection
+          reference={mainSection}
+          mainSectionClick={() => scrollToDiv(mainSection)}
+          whyintelliHackClick={() => scrollToDiv(whyintelliHack)}
+          timelineClick={() => scrollToDiv(timeline)}
+          praposalSubmissionClick={() => scrollToDiv(praposalSubmission)}
+          whatTheySayClick={() => scrollToDiv(whatTheySay)}
+          sponsersClick={() => scrollToDiv(sponsers)}
+        />
+        <WhyIntelliHackSection reference={whyintelliHack} />
+        <Timeline reference={timeline} />
+        <PraposalSubmission reference={praposalSubmission} />
+        <Sponsers reference={sponsers} />
+        <WhatTheySay reference={whatTheySay} />
       </div>
     </div>
   );

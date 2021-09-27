@@ -6,12 +6,17 @@ body {
   font-size: 16px;
 }
 
+.timeline-main-cnt {
+  margin-bottom: 150px;
+}
+
 .title {
   color: white;
   font-size: 3em;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
-  margin-top: 50px;
+
+  padding-top: 80px;
   margin-bottom: 100px;
 }
 
@@ -31,10 +36,6 @@ h3 {
 
 #description {
   margin: 1.5em 0 2em 0;
-}
-
-.blaa {
-  /* width: 50px; */
 }
 
 .button {
