@@ -7,6 +7,9 @@ import "../styles/price.css";
 import Flip from "react-reveal/Flip";
 import Roll from "react-reveal/Roll";
 import Slide from "react-reveal/Slide";
+import Wobble from "react-reveal/Wobble";
+import Bounce from "react-reveal/Bounce";
+import Fade from "react-reveal/Fade";
 
 const Price = ({ reference }) => {
   return (
@@ -64,7 +67,7 @@ const Price = ({ reference }) => {
       <div className="titles-row-master">
         {/* <h1>Title row</h1> */}
 
-        <Slide left>
+        <Fade top>
           <div className="intellihack-master-image">
             <img
               className="title-card-img-top1"
@@ -79,7 +82,7 @@ const Price = ({ reference }) => {
               </div>
             </div>
           </div>
-        </Slide>
+        </Fade>
 
         <div className="intellihack-master-text">
           <div className="intellihack-master">
@@ -93,7 +96,7 @@ const Price = ({ reference }) => {
       </div>
 
       <div className="titles-row-most-popular">
-        <Slide right>
+        <Fade bottom>
           <div className="most-popular-team-image">
             <img
               className="title-card-img-top1"
@@ -108,7 +111,7 @@ const Price = ({ reference }) => {
               </div>
             </div>
           </div>
-        </Slide>
+        </Fade>
         <div className="intellihack-most-popular-text">
           <div className="most-popular-team">
             The top ten finalists will present their applications in the form of
