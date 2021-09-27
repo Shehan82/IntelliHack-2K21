@@ -83,13 +83,11 @@ const Price = ({ reference }) => {
 
         <div className="intellihack-master-text">
           <div className="intellihack-master">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id enim
-            asperiores nemo nam? Facere obcaecati, nesciunt ex, atque tempore,
-            quasi omnis reprehenderit totam consequuntur non ullam natus.
-            Dolorum a exercitationem eius quidem accusamus? Aspernatur in
-            inventore quis natus voluptates minus sint. Repudiandae asperiores,
-            eaque dolorum reiciendis doloremque dolore debitis ipsum atque iure
-            impedit at aut!
+            Machine Learning related tasks will be posted on our social media
+            platforms on a weekly basis, which is an open event for any
+            registered contestant. A leaderboard will be maintained throughout
+            the competing period and winners will be awarded with the title of
+            “IntelliHack Master” and valuable prizes.
           </div>
         </div>
       </div>
@@ -113,13 +111,11 @@ const Price = ({ reference }) => {
         </Slide>
         <div className="intellihack-most-popular-text">
           <div className="most-popular-team">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id enim
-            asperiores nemo nam? Facere obcaecati, nesciunt ex, atque tempore,
-            quasi omnis reprehenderit totam consequuntur non ullam natus.
-            Dolorum a exercitationem eius quidem accusamus? Aspernatur in
-            inventore quis natus voluptates minus sint. Repudiandae asperiores,
-            eaque dolorum reiciendis doloremque dolore debitis ipsum atque iure
-            impedit at aut!
+            The top ten finalists will present their applications in the form of
+            a short video or a creative post, which will be shared on our social
+            media platforms. The team that receives the highest score based on
+            social media analytics (Reacts, Shares), will be selected as the
+            "Most Popular Team" and prizes will be awarded.
           </div>
         </div>
       </div>

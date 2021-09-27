@@ -45,7 +45,13 @@ function WhyIntelliHackSection({ reference }) {
               contestants get the privilege to network with some of the topmost
               experts in the industry and expose themselves to this attractive
               technology that would benefit them immensely in their future
-              activities.
+              activities.IntelliHack is a great platform for those curious minds
+              interested in machine-based learning to meet and collaborate with
+              each other. It also encourages the youth to participate and be a
+              part of this revolutionary technology and sciences which are the
+              upcoming breakthroughs in the computer world. And among many more
+              benefits, IntelliHack aims to raise awareness among the society
+              about these machine-based learning and artificial intelligence.
             </div>
           </div>
         </div>

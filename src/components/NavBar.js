@@ -28,7 +28,7 @@ function NavBar(props) {
             : "mobile-menu-item-cnt"
         }
       >
-        <div onClick={props.click} className="mobile-row">
+        <div onClick={props.timelineClick} className="mobile-row">
           Timeline
         </div>
         <div onClick={props.whyintelliHackClick} className="mobile-row">
