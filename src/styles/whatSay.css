@@ -54,3 +54,26 @@
   max-width: 500px;
   /* border: 1px solid black; */
 }
+
+.card-content {
+  height: fit-content;
+  padding: 15px;
+}
+
+@media (max-width: 1000px) {
+  .card-content {
+    height: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-content {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 750px) {
+  .whatTheySay-topic {
+    font-size: 30px;
+  }
+}

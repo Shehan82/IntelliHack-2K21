@@ -56,7 +56,7 @@ const carouselProperties = {
       },
     },
     {
-      breakpoint: 1300,
+      breakpoint: 1370,
       settings: {
         slidesToShow: 3,
         centerMode: false,
@@ -83,7 +83,7 @@ const WhatTheySay = ({ reference }) => {
             >
               <CardActionArea>
                 <CardMedia component="img" height="320" image={item.Image} />
-                <CardContent>
+                <CardContent class="card-content">
                   <Typography
                     style={{
                       color: "white",
@@ -108,11 +108,11 @@ const WhatTheySay = ({ reference }) => {
 
                   <Typography
                     style={{
+                      fontSize: 12,
                       marginTop: 15,
                       color: "white",
                       fontFamily: "Poppins, sans-serif",
                     }}
-                    variant="body2"
                     color="text.secondary"
                   >
                     {item.Disc2}
@@ -120,11 +120,11 @@ const WhatTheySay = ({ reference }) => {
 
                   <Typography
                     style={{
+                      fontSize: 12,
                       marginTop: 5,
                       color: "white",
                       fontFamily: "Poppins, sans-serif",
                     }}
-                    variant="body2"
                     color="text.secondary"
                   >
                     {item.Disc3}
