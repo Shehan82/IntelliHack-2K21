@@ -39,18 +39,13 @@ function WhyIntelliHackSection({ reference }) {
           <div className="why-intellihack-box">
             <div className="why-intellihack-topic">Why IntelliHack ?</div>
             <div className="why-intellihack-text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
+              IntelliHack is the first ever Machine Learning hackathon in Sri
+              Lanka. This is one of the year’s most anticipated, exciting, and
+              electrifying events that innovative minds look forward to. The
+              contestants get the privilege to network with some of the topmost
+              experts in the industry and expose themselves to this attractive
+              technology that would benefit them immensely in their future
+              activities.
             </div>
           </div>
         </div>

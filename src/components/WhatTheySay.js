@@ -85,7 +85,10 @@ const WhatTheySay = ({ reference }) => {
                 <CardMedia component="img" height="320" image={item.Image} />
                 <CardContent>
                   <Typography
-                    style={{ color: "white" }}
+                    style={{
+                      color: "white",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
                     gutterBottom
                     variant="h5"
                     component="div"
@@ -93,11 +96,26 @@ const WhatTheySay = ({ reference }) => {
                     {item.Name}
                   </Typography>
                   <Typography
-                    style={{ color: "white" }}
+                    style={{
+                      color: "white",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
                     variant="body2"
                     color="text.secondary"
                   >
                     {item.Disc}
+                  </Typography>
+
+                  <Typography
+                    style={{
+                      marginTop: 15,
+                      color: "white",
+                      fontFamily: "Poppins, sans-serif",
+                    }}
+                    variant="body2"
+                    color="text.secondary"
+                  >
+                    {item.Disc2}
                   </Typography>
                 </CardContent>
               </CardActionArea>
