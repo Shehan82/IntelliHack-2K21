@@ -3,10 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/whatSay.css";
 import { multiData } from "./whatSayData";
-import Ramith from "../img/ramith.png";
-import Sula from "../img/sula.png";
-import Dhanu from "../img/dhanu.png";
-import Shashika from "../img/shashika.png";
+
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import {
   Card,
@@ -85,7 +82,7 @@ const WhatTheySay = ({ reference }) => {
               style={{ margin: 20, backgroundColor: "#041149" }}
             >
               <CardActionArea>
-                <CardMedia component="img" height="350" image={item.Image} />
+                <CardMedia component="img" height="320" image={item.Image} />
                 <CardContent>
                   <Typography
                     style={{ color: "white" }}
