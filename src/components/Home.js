@@ -5,6 +5,8 @@ import * as THREE from "three";
 import "../styles/backGroundAnimation.css";
 import WhyIntelliHackSection from "./WhyIntelliHackSection";
 import Price from "./Price";
+import Registration from "./RegistrationForm";
+import Member from "./MemberDetails";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -110,6 +112,8 @@ function Home() {
         <WhyIntelliHackSection />
         <Timeline />
         <Price />
+        <Registration />
+        <Member />
       </div>
     </div>
   );
