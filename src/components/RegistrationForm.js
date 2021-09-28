@@ -71,6 +71,8 @@ function RegistrationForm() {
                 fontFamily: "Poppins, sans-serif",
                 backgroundColor: "#041149",
                 color: "white",
+                paddingTop: 10,
+                paddingBottom: 10,
               }}
               variant="contained"
               component="label"
