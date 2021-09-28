@@ -39,7 +39,39 @@
   margin-bottom: 20px;
 }
 
+.reg-btn {
+  width: 55%;
+  margin-bottom: 20px;
+}
+
 .rg-announce {
   font-size: 12px;
   margin-bottom: 50px;
+  width: 80%;
+}
+
+@media (max-width: 550px) {
+  .rg-team-details {
+    margin-bottom: 40px;
+    /* border: 1px solid black; */
+    width: 80%;
+  }
+
+  .rg-topic {
+    width: 80%;
+    font-size: 7vw;
+  }
+
+  .reg-btn {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .rg-team-topic {
+    /* margin-left: -40px; */
+    /* border: 1px solid black; */
+    font-size: 5vw;
+    margin-bottom: 20px;
+  }
 }

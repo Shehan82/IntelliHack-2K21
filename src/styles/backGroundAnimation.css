@@ -20,3 +20,9 @@
   outline: none;
   overflow: auto;
 }
+
+@media (max-width: 720px) {
+  .registration-modal {
+    width: 80%;
+  }
+}

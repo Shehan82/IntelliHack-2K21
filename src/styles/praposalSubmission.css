@@ -41,7 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 0.5rem;
   color: white;
   font-size: 23px;
   font-weight: 600;

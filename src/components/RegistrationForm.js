@@ -66,11 +66,15 @@ function RegistrationForm() {
             {file && <div style={{ marginBottom: 10 }}>{file.name}</div>}
 
             <Button
-              style={{ width: "100%", fontFamily: "Poppins, sans-serif" }}
+              style={{
+                width: "100%",
+                fontFamily: "Poppins, sans-serif",
+                backgroundColor: "#041149",
+              }}
               variant="contained"
               component="label"
             >
-              Upload Project Praposal
+              Upload Praposal
               <input
                 onChange={(event) => {
                   handleFileUpload(event);
@@ -225,14 +229,16 @@ function RegistrationForm() {
         </div>
       </div>
 
-      <Button
-        style={{ width: "55%", marginBottom: 20 }}
-        color="success"
-        variant="contained"
-        component="label"
-      >
-        Register Team
-      </Button>
+      <div className="reg-btn">
+        <Button
+          style={{ width: "100%" }}
+          color="success"
+          variant="contained"
+          component="label"
+        >
+          Register Team
+        </Button>
+      </div>
 
       <div class="rg-announce">
         * If you have any issues regarding registration, please contact us.{" "}
