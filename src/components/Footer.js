@@ -10,6 +10,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import CsLogo from "../img/csLogo.png";
 
+import {
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -22,9 +28,9 @@ function Footer() {
           <div className="contactUs">Contact Us</div>
           <div className="our-email">ucscieecschapter@gmail.com</div>
           <div className="social-media-row">
-            <FacebookIcon sx={{ fontSize: 50 }} />
-            <LinkedInIcon sx={{ fontSize: 50 }} />
-            <InstagramIcon sx={{ fontSize: 50 }} />
+            <FontAwesomeIcon size="3x" icon={faFacebook} />
+            <FontAwesomeIcon size="3x" icon={faLinkedin} />
+            <FontAwesomeIcon size="3x" icon={faInstagram} />
           </div>
         </div>
         <div className="card-cnt">
