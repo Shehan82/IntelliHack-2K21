@@ -216,17 +216,20 @@ function RegistrationForm() {
             variant="outlined"
           />
           <TextField
-            id="outlined-select-currency"
+            id="outlined-select-currency-native"
             select
             label="Select Your T shirt size"
             value={tshirt}
             onChange={handleChange}
             helperText="Please select your T-Shirt size"
+            SelectProps={{
+              native: true,
+            }}
           >
             {tshirtSizes.map((option) => (
-              <MenuItem key={option.value} value={option.value}>
+              <option key={option.value} value={option.value}>
                 {option.label}
-              </MenuItem>
+              </option>
             ))}
           </TextField>
         </div>
