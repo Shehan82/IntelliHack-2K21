@@ -55,6 +55,10 @@
   /* border: 1px solid black; */
 }
 
+.slide {
+  padding-bottom: 100px;
+}
+
 .card-content {
   height: fit-content;
   padding: 15px;

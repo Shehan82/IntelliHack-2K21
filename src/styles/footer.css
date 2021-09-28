@@ -1,0 +1,96 @@
+.ft-cnt {
+  width: 100%;
+
+  /* background-color: black; */
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactUs-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.contactUs {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.our-email {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.social-media-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.stay-text {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.card-cnt {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.row2 {
+  margin-top: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+.csLogo {
+  width: 400px;
+}
+
+@media (max-width: 1280px) {
+  .row-1 {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contactUs-cnt {
+    width: 100%;
+  }
+
+  .card-cnt {
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .card-cnt {
+    flex-direction: column;
+  }
+}
+@media (max-width: 440px) {
+  .csLogo {
+    width: 80%;
+  }
+
+  .contactUs {
+    font-size: 30px;
+  }
+
+  .our-email {
+    font-size: 15px;
+  }
+}

@@ -6,6 +6,7 @@ import "../styles/backGroundAnimation.css";
 import WhyIntelliHackSection from "./WhyIntelliHackSection";
 import WhatTheySay from "./WhatTheySay";
 import PraposalSubmission from "./PraposalSubmission";
+import Footer from "./Footer";
 import Sponsers from "./Sponsers";
 import Price from "./Price";
 import { useRef } from "react";
@@ -215,6 +216,7 @@ function Home() {
         <Price reference={prices} />
         <Sponsers reference={sponsers} />
         <WhatTheySay reference={whatTheySay} />
+        <Footer />
       </div>
     </div>
   );
