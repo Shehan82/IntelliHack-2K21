@@ -10,6 +10,13 @@ import Sponsers from "./Sponsers";
 import Price from "./Price";
 import { useRef } from "react";
 
+import Backdrop from "@mui/material/Backdrop";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+
 function Home() {
   const [loading, setloading] = useState(false);
 
@@ -119,6 +126,10 @@ function Home() {
 
   const el2 = useRef();
 
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div>
       <div>
@@ -133,10 +144,31 @@ function Home() {
           sponsersClick={() => scrollToDiv(sponsers)}
           pricesClick={() => scrollToDiv(prices)}
         />
+
+        <div>
+          {/* <Button onClick={handleOpen}>Open modal</Button> */}
+          <Modal
+            aria-labelledby="transition-modal-title"
+            aria-describedby="transition-modal-description"
+            open={open}
+            onClose={handleClose}
+            closeAfterTransition
+            BackdropComponent={Backdrop}
+            BackdropProps={{
+              timeout: 500,
+            }}
+          >
+            <div className="registration-modal"></div>
+          </Modal>
+        </div>
+
         <WhyIntelliHackSection reference={whyintelliHack} />
         <Timeline reference={timeline} />
 
-        <PraposalSubmission reference={praposalSubmission} />
+        <PraposalSubmission
+          openPopUp={handleOpen}
+          reference={praposalSubmission}
+        />
         <Price reference={prices} />
         <Sponsers reference={sponsers} />
         <WhatTheySay reference={whatTheySay} />

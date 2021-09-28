@@ -6,3 +6,16 @@
   position: fixed;
   z-index: -10;
 }
+
+.registration-modal {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 60%;
+  height: 200px;
+  margin: 0px;
+  background-color: white;
+  outline: none;
+}
