@@ -188,6 +188,7 @@ function RegistrationForm() {
             variant="outlined"
           />
           <TextField
+            style={{ display: "flex", flexDirection: "column" }}
             id="outlined-select-currency"
             select
             label="Select Your T shirt size"
