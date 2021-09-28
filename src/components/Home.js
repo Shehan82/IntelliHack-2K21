@@ -9,6 +9,7 @@ import PraposalSubmission from "./PraposalSubmission";
 import Sponsers from "./Sponsers";
 import Price from "./Price";
 import { useRef } from "react";
+import Footer from "./Footer";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -135,11 +136,12 @@ function Home() {
         />
         <WhyIntelliHackSection reference={whyintelliHack} />
         <Timeline reference={timeline} />
-
+        
         <PraposalSubmission reference={praposalSubmission} />
         <Price reference={prices} />
         <Sponsers reference={sponsers} />
         <WhatTheySay reference={whatTheySay} />
+        <Footer />
       </div>
     </div>
   );
