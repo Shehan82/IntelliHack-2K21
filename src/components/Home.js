@@ -16,6 +16,7 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import RegistrationForm from "./RegistrationForm";
 
 function Home() {
   const [loading, setloading] = useState(false);
@@ -158,7 +159,9 @@ function Home() {
               timeout: 500,
             }}
           >
-            <div className="registration-modal"></div>
+            <div className="registration-modal">
+              <RegistrationForm />
+            </div>
           </Modal>
         </div>
 
