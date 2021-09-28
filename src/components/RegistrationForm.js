@@ -233,14 +233,7 @@ function RegistrationForm() {
       </div>
 
       <div className="reg-btn">
-        <Button
-          style={{ width: "100%" }}
-          color="success"
-          variant="contained"
-          component="label"
-        >
-          Register Team
-        </Button>
+        <div className="upload-btn">Register Team</div>
       </div>
 
       <div class="rg-announce">
