@@ -70,6 +70,7 @@ function RegistrationForm() {
                 width: "100%",
                 fontFamily: "Poppins, sans-serif",
                 backgroundColor: "#041149",
+                color: "white",
               }}
               variant="contained"
               component="label"
