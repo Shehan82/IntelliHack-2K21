@@ -18,6 +18,17 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import RegistrationForm from "./RegistrationForm";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+
+import {
+  ClipLoader,
+  CircleLoader,
+  RingLoader,
+  ScaleLoader,
+  HashLoader,
+} from "react-spinners";
+
 function Home() {
   const [loading, setloading] = useState(false);
 
@@ -131,6 +142,10 @@ function Home() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const [openSuccess, setOpenSuccess] = React.useState(false);
+  const handleOpenSuccess = () => setOpenSuccess(true);
+  const handleCloseSuccess = () => setOpenSuccess(false);
+
   return (
     <div>
       <div>
@@ -160,7 +175,32 @@ function Home() {
             }}
           >
             <div className="registration-modal">
-              <RegistrationForm />
+              <RegistrationForm
+                handleOpenSuccess={handleOpenSuccess}
+                handleClose={handleClose}
+              />
+            </div>
+          </Modal>
+        </div>
+
+        <div>
+          {/* <Button onClick={handleOpen}>Open modal</Button> */}
+          <Modal
+            aria-labelledby="transition-modal-title"
+            aria-describedby="transition-modal-description"
+            open={openSuccess}
+            onClose={handleCloseSuccess}
+            closeAfterTransition
+            BackdropComponent={Backdrop}
+            BackdropProps={{
+              timeout: 500,
+            }}
+          >
+            <div className="success-modal">
+              <FontAwesomeIcon color="green" size="6x" icon={faCheckCircle} />
+              <div style={{ marginTop: 20 }}>
+                Your team added successfully, Stay tuned with Us.
+              </div>
             </div>
           </Modal>
         </div>

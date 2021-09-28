@@ -8,10 +8,172 @@ import { useRef } from "react";
 import { useState } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
+import { firestore, storage } from "../config";
+import {
+  ClipLoader,
+  CircleLoader,
+  RingLoader,
+  ScaleLoader,
+  HashLoader,
+  ClockLoader,
+  BounceLoader,
+  FadeLoader,
+} from "react-spinners";
 
-function RegistrationForm() {
+function RegistrationForm({ handleOpenSuccess, handleClose }) {
   const [tshirt, settshirt] = React.useState("XS");
-  const [file, setfile] = useState();
+  const [file, setfile] = useState(null);
+  const [loading, setloading] = useState(false);
+  const [err, seterr] = useState("");
+
+  //  const [university, setuniversity] = useState("");
+  //  const [teamName, setteamName] = useState("")
+  //  const [projectOverview, setprojectOverview] = useState(initialState)
+
+  // const [member1Name, setmember1Name] = useState(initialState)
+  // const [member1NIC, setmember1NIC] = useState(initialState)
+  // const [member1Contact, setmember1Contact] = useState(initialState)
+  // const [member1tshirtSize, setmember1tshirtSize] = useState(initialState)
+
+  const [teamDetails, setteamDetails] = useState({
+    university: "",
+    teamName: "",
+    projectOverview: "",
+
+    member1Name: "",
+    member1NIC: "",
+    member1Contact: "",
+    member1tshirtSize: "XS",
+
+    member2Name: "",
+    member2NIC: "",
+    member2Contact: "",
+    member2tshirtSize: "XS",
+
+    member3Name: "",
+    member3NIC: "",
+    member3Contact: "",
+    member3tshirtSize: "XS",
+
+    member4Name: "",
+    member4NIC: "",
+    member4Contact: "",
+    member4tshirtSize: "XS",
+
+    member5Name: "",
+    member5NIC: "",
+    member5Contact: "",
+    member5tshirtSize: "XS",
+  });
+
+  // const registerTeam = () => {
+  //   setloading(true);
+  //   firestore
+  //     .collection("Team Details")
+  //     .add(teamDetails)
+  //     .then(() => {
+  //       const upload = storage
+  //         .ref(`${teamDetails.teamName}/${file.name}`)
+  //         .put(file);
+
+  //       upload.on(
+  //         "state_changed",
+  //         (snapshot) => {},
+  //         (error) => {
+  //           setloading(false);
+  //           seterr(error.message);
+  //         },
+  //         () => {
+  //           storage
+  //             .ref(`${teamDetails.teamName}`)
+  //             .child(file.name)
+  //             .getDownloadURL()
+  //             .then(() => {
+  //               handleClose();
+  //               handleOpenSuccess();
+  //               setloading(false);
+  //             });
+  //         }
+  //       );
+  //     })
+  //     .catch((err) => {
+  //       if (err != null) {
+  //         seterr(err.message);
+  //       }
+
+  //       setloading(false);
+  //     });
+  // };
+
+  const registerTeam = () => {
+    if (
+      file != null &&
+      teamDetails.university != "" &&
+      teamDetails.teamName != "" &&
+      teamDetails.projectOverview != "" &&
+      teamDetails.member1Name != "" &&
+      teamDetails.member1NIC != "" &&
+      teamDetails.member1Contact != "" &&
+      teamDetails.member1tshirtSize != "" &&
+      teamDetails.member2Name != "" &&
+      teamDetails.member2NIC != "" &&
+      teamDetails.member2Contact != "" &&
+      teamDetails.member2tshirtSize != "" &&
+      teamDetails.member3Name != "" &&
+      teamDetails.member3NIC != "" &&
+      teamDetails.member3Contact != "" &&
+      teamDetails.member3tshirtSize != "" &&
+      teamDetails.member4Name != "" &&
+      teamDetails.member4NIC != "" &&
+      teamDetails.member4Contact != "" &&
+      teamDetails.member4tshirtSize != "" &&
+      teamDetails.member5Name != "" &&
+      teamDetails.member5NIC != "" &&
+      teamDetails.member5Contact != "" &&
+      teamDetails.member5tshirtSize != ""
+    ) {
+      seterr("");
+      setloading(true);
+      firestore
+        .collection("Team Details")
+        .add(teamDetails)
+        .then(() => {
+          const upload = storage
+            .ref(`${teamDetails.teamName}/${file.name}`)
+            .put(file);
+
+          upload.on(
+            "state_changed",
+            (snapshot) => {},
+            (error) => {
+              setloading(false);
+              seterr(error.message);
+            },
+            () => {
+              storage
+                .ref(`${teamDetails.teamName}`)
+                .child(file.name)
+                .getDownloadURL()
+                .then(() => {
+                  handleClose();
+                  handleOpenSuccess();
+                  setloading(false);
+                });
+            }
+          );
+        })
+        .catch((err) => {
+          if (err != null) {
+            seterr(err.message);
+          }
+
+          setloading(false);
+        });
+    } else {
+      seterr("All fields are must be filled");
+    }
+  };
+
   const handleChange = (event) => {
     settshirt(event.target.value);
   };
@@ -41,25 +203,51 @@ function RegistrationForm() {
       label: "XL",
     },
   ];
-  //   console.log(props.slider.slickNext);
+  console.log(teamDetails);
   return (
     <div className="rg-main">
       {console.log(file)}
+      {/* <div className="rg-wait">
+        <HashLoader color={"blue"} loading={true} size={100} />
+      </div> */}
       <div className="rg-topic">Registration Form</div>
       <div className="rg-team-details">
         <div className="rg-team-topic">Team Details</div>
 
         <div className="rg-team-fields">
+          {err && <div className="rg-btm-err">* {err}</div>}
           <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                university: event.target.value,
+              });
+            }}
             id="outlined-basic"
             label="University / Institute"
             variant="outlined"
           />
-          <TextField id="outlined-basic" label="Team Name" variant="outlined" />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                teamName: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="Team Name"
+            variant="outlined"
+          />
           <TextField
             id="outlined-basic"
             label="Project Overview"
             variant="outlined"
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                projectOverview: event.target.value,
+              });
+            }}
           />
 
           <div style={{ width: "100%", marginBottom: 10 }}>
@@ -89,23 +277,57 @@ function RegistrationForm() {
           </div>
         </div>
       </div>
+
+      {/* team leader details */}
+
       <div className="rg-team-details">
         <div className="rg-team-topic">Team Leader details</div>
 
         <div className="rg-team-fields">
-          <TextField id="outlined-basic" label="Name" variant="outlined" />
-          <TextField id="outlined-basic" label="NIC" variant="outlined" />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member1Name: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+          />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member1NIC: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="NIC"
+            variant="outlined"
+          />
           <TextField
             id="outlined-basic"
             label="Contact No"
             variant="outlined"
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member1Contact: event.target.value,
+              });
+            }}
           />
           <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member1tshirtSize: event.target.value,
+              });
+            }}
             id="outlined-select-currency-native"
             select
             label="Select Your T shirt size"
-            value={tshirt}
-            onChange={handleChange}
+            value={teamDetails.member1tshirtSize}
             helperText="Please select your T-Shirt size"
             SelectProps={{
               native: true,
@@ -120,25 +342,56 @@ function RegistrationForm() {
         </div>
       </div>
 
-      {/*  */}
+      {/* member 2 details */}
 
       <div className="rg-team-details">
         <div className="rg-team-topic">Member 1 details</div>
 
         <div className="rg-team-fields">
-          <TextField id="outlined-basic" label="Name" variant="outlined" />
-          <TextField id="outlined-basic" label="NIC" variant="outlined" />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member2Name: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+          />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member2NIC: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="NIC"
+            variant="outlined"
+          />
           <TextField
             id="outlined-basic"
             label="Contact No"
             variant="outlined"
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member2Contact: event.target.value,
+              });
+            }}
           />
           <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member2tshirtSize: event.target.value,
+              });
+            }}
             id="outlined-select-currency-native"
             select
             label="Select Your T shirt size"
-            value={tshirt}
-            onChange={handleChange}
+            value={teamDetails.member2tshirtSize}
             helperText="Please select your T-Shirt size"
             SelectProps={{
               native: true,
@@ -153,24 +406,56 @@ function RegistrationForm() {
         </div>
       </div>
 
-      {/*  */}
+      {/* member 3 details */}
+
       <div className="rg-team-details">
         <div className="rg-team-topic">Member 2 details</div>
 
         <div className="rg-team-fields">
-          <TextField id="outlined-basic" label="Name" variant="outlined" />
-          <TextField id="outlined-basic" label="NIC" variant="outlined" />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member3Name: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+          />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member3NIC: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="NIC"
+            variant="outlined"
+          />
           <TextField
             id="outlined-basic"
             label="Contact No"
             variant="outlined"
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member3Contact: event.target.value,
+              });
+            }}
           />
           <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member3tshirtSize: event.target.value,
+              });
+            }}
             id="outlined-select-currency-native"
             select
             label="Select Your T shirt size"
-            value={tshirt}
-            onChange={handleChange}
+            value={teamDetails.member3tshirtSize}
             helperText="Please select your T-Shirt size"
             SelectProps={{
               native: true,
@@ -184,24 +469,57 @@ function RegistrationForm() {
           </TextField>
         </div>
       </div>
+
+      {/* member 4 details */}
 
       <div className="rg-team-details">
         <div className="rg-team-topic">Member 3 details</div>
 
         <div className="rg-team-fields">
-          <TextField id="outlined-basic" label="Name" variant="outlined" />
-          <TextField id="outlined-basic" label="NIC" variant="outlined" />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member4Name: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+          />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member4NIC: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="NIC"
+            variant="outlined"
+          />
           <TextField
             id="outlined-basic"
             label="Contact No"
             variant="outlined"
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member4Contact: event.target.value,
+              });
+            }}
           />
           <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member4tshirtSize: event.target.value,
+              });
+            }}
             id="outlined-select-currency-native"
             select
             label="Select Your T shirt size"
-            value={tshirt}
-            onChange={handleChange}
+            value={teamDetails.member4tshirtSize}
             helperText="Please select your T-Shirt size"
             SelectProps={{
               native: true,
@@ -216,23 +534,56 @@ function RegistrationForm() {
         </div>
       </div>
 
+      {/* member 5 details */}
+
       <div className="rg-team-details">
         <div className="rg-team-topic">Member 4 details</div>
 
         <div className="rg-team-fields">
-          <TextField id="outlined-basic" label="Name" variant="outlined" />
-          <TextField id="outlined-basic" label="NIC" variant="outlined" />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member5Name: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+          />
+          <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member5NIC: event.target.value,
+              });
+            }}
+            id="outlined-basic"
+            label="NIC"
+            variant="outlined"
+          />
           <TextField
             id="outlined-basic"
             label="Contact No"
             variant="outlined"
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member5Contact: event.target.value,
+              });
+            }}
           />
           <TextField
+            onChange={(event) => {
+              setteamDetails({
+                ...teamDetails,
+                member5tshirtSize: event.target.value,
+              });
+            }}
             id="outlined-select-currency-native"
             select
             label="Select Your T shirt size"
-            value={tshirt}
-            onChange={handleChange}
+            value={teamDetails.member5tshirtSize}
             helperText="Please select your T-Shirt size"
             SelectProps={{
               native: true,
@@ -248,7 +599,16 @@ function RegistrationForm() {
       </div>
 
       <div className="reg-btn">
-        <div className="upload-btn">Register Team</div>
+        {err && <div className="rg-btm-err">* {err}</div>}
+        <div onClick={registerTeam} className="upload-btn">
+          {loading && (
+            <div className="rg-ld">
+              <HashLoader color={"white"} loading={loading} size={20} />
+            </div>
+          )}
+
+          <div>Register Team</div>
+        </div>
       </div>
 
       <div class="rg-announce">
