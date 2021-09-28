@@ -20,7 +20,7 @@ function Footer() {
       <div className="row-1">
         <div className="contactUs-cnt">
           <div className="contactUs">Contact Us</div>
-          <div className="our-email">Shehansandeepa82@gmail.com</div>
+          <div className="our-email">ucscieecschapter@gmail.com</div>
           <div className="social-media-row">
             <FacebookIcon sx={{ fontSize: 50 }} />
             <LinkedInIcon sx={{ fontSize: 50 }} />
