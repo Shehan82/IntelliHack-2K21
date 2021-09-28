@@ -36,11 +36,17 @@ function Timeline({ reference }) {
         {timelineElements.map((element) => {
           return (
             <VerticalTimelineElement
-              key={element.id}
+            contentStyle={{
+              background: "#173b6962",
+              color:'#fff'
+            }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(31, 38, 135)' }}
+            key={element.id}
               dateClassName="date"
               date={element.date}
               iconStyle={logoIconStyle}
               icon={<LogoIcon />}
+              
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
