@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/timeline.css";
-import { ReactComponent as LogoIcon } from "../logo.svg";
+import { ReactComponent as LogoIcon } from "../img/intelli.svg";
 import timelineElements from "./timelineElements";
 import logo from "../img/logoWhite.png";
 
@@ -11,7 +11,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function Timeline({ reference }) {
-  let logoIconStyle = { background: "black" };
+  let logoIconStyle = { background: "#fff", color:"#173b6962" };
 
   const [animate, setanimate] = useState(false);
   useEffect(() => {
@@ -22,7 +22,7 @@ function Timeline({ reference }) {
     // console.log(window.innerWidth);
     // console.log(10);
     if (window.innerWidth < 1350) {
-      setanimate(false);
+      setanimate(true);
     } else {
       setanimate(true);
     }
@@ -36,11 +36,17 @@ function Timeline({ reference }) {
         {timelineElements.map((element) => {
           return (
             <VerticalTimelineElement
-              key={element.id}
+            contentStyle={{
+              background: "#173b6962",
+              color:'#fff'
+            }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(31, 38, 135)' }}
+            key={element.id}
               dateClassName="date"
               date={element.date}
               iconStyle={logoIconStyle}
               icon={<LogoIcon />}
+              
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
@@ -49,6 +55,10 @@ function Timeline({ reference }) {
             </VerticalTimelineElement>
           );
         })}
+        <VerticalTimelineElement
+              iconStyle={logoIconStyle}
+              icon={<LogoIcon />} 
+            />
       </VerticalTimeline>
     </div>
   );
