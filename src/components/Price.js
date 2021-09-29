@@ -67,22 +67,20 @@ const Price = ({ reference }) => {
       <div className="titles-row-master">
         {/* <h1>Title row</h1> */}
 
-        <Fade top>
-          <div className="intellihack-master-image">
-            <img
-              className="title-card-img-top1"
-              src={Titles}
-              alt="intellihack-master"
-            />
-            <div class="title-card-img-top1-text">
-              <div>
-                INTELLIHACK'21
-                <br />
-                MASTER
-              </div>
+        <div className="intellihack-master-image">
+          <img
+            className="title-card-img-top1"
+            src={Titles}
+            alt="intellihack-master"
+          />
+          <div class="title-card-img-top1-text">
+            <div>
+              INTELLIHACK'21
+              <br />
+              MASTER
             </div>
           </div>
-        </Fade>
+        </div>
 
         <div className="intellihack-master-text">
           <div className="intellihack-master">
@@ -96,22 +94,21 @@ const Price = ({ reference }) => {
       </div>
 
       <div className="titles-row-most-popular">
-        <Fade bottom>
-          <div className="most-popular-team-image">
-            <img
-              className="title-card-img-top1"
-              src={Titles}
-              alt="intellihack-master"
-            />
-            <div class="title-card-img-top2-text">
-              <div>
-                MOST POPULAR
-                <br />
-                TEAM
-              </div>
+        <div className="most-popular-team-image">
+          <img
+            className="title-card-img-top1"
+            src={Titles}
+            alt="intellihack-master"
+          />
+          <div class="title-card-img-top2-text">
+            <div>
+              MOST POPULAR
+              <br />
+              TEAM
             </div>
           </div>
-        </Fade>
+        </div>
+
         <div className="intellihack-most-popular-text">
           <div className="most-popular-team">
             The top ten finalists will present their applications in the form of
