@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
-import logo from "../img/logobg.png";
+import logo from "../img/f1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -28,34 +28,76 @@ function NavBar(props) {
             : "mobile-menu-item-cnt"
         }
       >
-        <div onClick={props.timelineClick} className="mobile-row">
+        <div
+          onClick={() => {
+            props.whyintelliHackClick();
+            setclicked(false);
+          }}
+          className="mobile-row"
+        >
+          IntelliHack
+        </div>
+        <div
+          onClick={() => {
+            props.timelineClick();
+            setclicked(false);
+          }}
+          className="mobile-row"
+        >
           Timeline
         </div>
-        <div onClick={props.whyintelliHackClick} className="mobile-row">
-          IntelliHack?
-        </div>
-        <div onClick={props.timelineClick} className="mobile-row">
-          Timeline
-        </div>
-        <div onClick={props.praposalSubmissionClick} className="mobile-row">
+
+        <div
+          onClick={() => {
+            props.praposalSubmissionClick();
+            setclicked(false);
+          }}
+          className="mobile-row"
+        >
           Submissions
         </div>
-        <div onClick={props.pricesClick} className="mobile-row">
-          Prices
+        <div
+          onClick={() => {
+            props.pricesClick();
+            setclicked(false);
+          }}
+          className="mobile-row"
+        >
+          Prizes
         </div>
-        <div onClick={props.sponsersClick} className="mobile-row">
+        <div
+          onClick={() => {
+            props.sponsersClick();
+            setclicked(false);
+          }}
+          className="mobile-row"
+        >
           Sponsors
         </div>
-        <div onClick={props.whatTheySayClick} className="mobile-row">
+        <div
+          onClick={() => {
+            props.whatTheySayClick();
+            setclicked(false);
+          }}
+          className="mobile-row"
+        >
           What They Say
         </div>
 
-        <div className="mobile-row">About Us</div>
+        <div
+          onClick={() => {
+            props.contactClick();
+            setclicked(false);
+          }}
+          className="mobile-row"
+        >
+          Contact Us
+        </div>
       </div>
 
       <div className="navbar-items">
         <div className="navbar-item-cnt">
-          <div onClick={props.whyintelliHackClick}>IntelliHack?</div>
+          <div onClick={props.whyintelliHackClick}>IntelliHack</div>
           <div className="navbar-not-clicked"></div>
         </div>
 
@@ -70,7 +112,7 @@ function NavBar(props) {
         </div>
 
         <div className="navbar-item-cnt">
-          <div onClick={props.pricesClick}>Prices</div>
+          <div onClick={props.pricesClick}>Prizes</div>
           <div className="navbar-not-clicked"></div>
         </div>
 
@@ -85,7 +127,7 @@ function NavBar(props) {
         </div>
 
         <div className="navbar-item-cnt">
-          <div>About</div>
+          <div onClick={props.contactClick}>Contact Us</div>
           <div className="navbar-not-clicked"></div>
         </div>
       </div>

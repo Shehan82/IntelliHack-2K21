@@ -22,14 +22,6 @@ import RegistrationForm from "./RegistrationForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  ClipLoader,
-  CircleLoader,
-  RingLoader,
-  ScaleLoader,
-  HashLoader,
-} from "react-spinners";
-
 function Home() {
   const [loading, setloading] = useState(false);
 
@@ -136,6 +128,7 @@ function Home() {
   const whatTheySay = useRef();
   const sponsers = useRef();
   const prices = useRef();
+  const contact = useRef();
 
   const el2 = useRef();
 
@@ -160,6 +153,7 @@ function Home() {
           whatTheySayClick={() => scrollToDiv(whatTheySay)}
           sponsersClick={() => scrollToDiv(sponsers)}
           pricesClick={() => scrollToDiv(prices)}
+          contactClick={() => scrollToDiv(contact)}
         />
 
         <div>
@@ -216,7 +210,7 @@ function Home() {
         <Price reference={prices} />
         <Sponsers reference={sponsers} />
         <WhatTheySay reference={whatTheySay} />
-        <Footer />
+        <Footer reference={contact} />
       </div>
     </div>
   );

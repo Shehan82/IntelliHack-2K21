@@ -5,17 +5,12 @@ import Third_Place from "../img/third_place.png";
 import Titles from "../img/title2.png";
 import "../styles/price.css";
 import Flip from "react-reveal/Flip";
-import Roll from "react-reveal/Roll";
-import Slide from "react-reveal/Slide";
-import Wobble from "react-reveal/Wobble";
-import Bounce from "react-reveal/Bounce";
-import Fade from "react-reveal/Fade";
 
 const Price = ({ reference }) => {
   return (
     <div ref={reference} className="prizes-row">
       <div className="header-name">
-        <div>Prices</div>
+        <div>Prizes</div>
       </div>
       <div className="winners-row">
         <Flip right>
@@ -29,7 +24,7 @@ const Price = ({ reference }) => {
                 alt="third_place"
               />
             </div>
-            <div className="third_card-detail">Rs. 25000</div>
+            <div className="third_card-detail">Rs. 25,000</div>
           </div>
         </Flip>
 
@@ -43,7 +38,7 @@ const Price = ({ reference }) => {
                 alt="first_place"
               />
             </div>
-            <div className="second_card-detail">Rs. 75000</div>
+            <div className="second_card-detail">Rs. 75,000</div>
           </div>
         </Flip>
 
@@ -59,31 +54,32 @@ const Price = ({ reference }) => {
                 alt="second_place"
               />
             </div>
-            <div className="first_card-detail">Rs. 50000</div>
+            <div className="first_card-detail">Rs. 50,000</div>
           </div>
         </Flip>
       </div>
       <div className="header-name2">{/* <div>Titles</div> */}</div>
-      <div className="titles-row-master">
-        {/* <h1>Title row</h1> */}
 
-        <div className="intellihack-master-image">
-          <img
-            className="title-card-img-top1"
-            src={Titles}
-            alt="intellihack-master"
-          />
-          <div class="title-card-img-top1-text">
-            <div>
-              INTELLIHACK'21
-              <br />
-              MASTER
+      <div className="title-main-cnt">
+        <div className="title-row1">
+          <Flip>
+            <div className="intellihack-master-img-cnt">
+              <img
+                className="intellihack-master-img"
+                src={Titles}
+                alt="intellihack-master"
+              />
+              <div class="title-txt">
+                <div>
+                  INTELLIHACK'21
+                  <br />
+                  MASTER
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </Flip>
 
-        <div className="intellihack-master-text">
-          <div className="intellihack-master">
+          <div className="intellihack-mstr-txt">
             Machine Learning related tasks will be posted on our social media
             platforms on a weekly basis, which is an open event for any
             registered contestant. A leaderboard will be maintained throughout
@@ -93,7 +89,35 @@ const Price = ({ reference }) => {
         </div>
       </div>
 
-      <div className="titles-row-most-popular">
+      <div className="title-main-cnt populer-team">
+        <div className="title-row2">
+          <div className="intellihack-mstr-txt">
+            Machine Learning related tasks will be posted on our social media
+            platforms on a weekly basis, which is an open event for any
+            registered contestant. A leaderboard will be maintained throughout
+            the competing period and winners will be awarded with the title of
+            “IntelliHack Master” and valuable prizes.
+          </div>
+          <Flip>
+            <div className="intellihack-master-img-cnt">
+              <img
+                className="intellihack-master-img"
+                src={Titles}
+                alt="intellihack-master"
+              />
+              <div class="title-txt">
+                <div>
+                  MOST POPULAR
+                  <br />
+                  TEAM
+                </div>
+              </div>
+            </div>
+          </Flip>
+        </div>
+      </div>
+
+      {/* <div className="titles-row-most-popular">
         <div className="most-popular-team-image">
           <img
             className="title-card-img-top1"
@@ -118,7 +142,7 @@ const Price = ({ reference }) => {
             "Most Popular Team" and prizes will be awarded.
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

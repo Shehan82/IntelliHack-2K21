@@ -1,39 +1,21 @@
 import React, { useEffect } from "react";
 import "../styles/registrationForm.css";
 import TextField from "@mui/material/TextField";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useRef } from "react";
+
 import { useState } from "react";
-import MenuItem from "@mui/material/MenuItem";
+
 import Button from "@mui/material/Button";
 import { firestore, storage } from "../config";
-import {
-  ClipLoader,
-  CircleLoader,
-  RingLoader,
-  ScaleLoader,
-  HashLoader,
-  ClockLoader,
-  BounceLoader,
-  FadeLoader,
-} from "react-spinners";
+import { HashLoader } from "react-spinners";
 
 function RegistrationForm({ handleOpenSuccess, handleClose }) {
   const [tshirt, settshirt] = React.useState("XS");
   const [file, setfile] = useState(null);
   const [loading, setloading] = useState(false);
   const [err, seterr] = useState("");
-
-  //  const [university, setuniversity] = useState("");
-  //  const [teamName, setteamName] = useState("")
-  //  const [projectOverview, setprojectOverview] = useState(initialState)
-
-  // const [member1Name, setmember1Name] = useState(initialState)
-  // const [member1NIC, setmember1NIC] = useState(initialState)
-  // const [member1Contact, setmember1Contact] = useState(initialState)
-  // const [member1tshirtSize, setmember1tshirtSize] = useState(initialState)
 
   const [teamDetails, setteamDetails] = useState({
     university: "",
@@ -206,10 +188,6 @@ function RegistrationForm({ handleOpenSuccess, handleClose }) {
   console.log(teamDetails);
   return (
     <div className="rg-main">
-      {console.log(file)}
-      {/* <div className="rg-wait">
-        <HashLoader color={"blue"} loading={true} size={100} />
-      </div> */}
       <div className="rg-topic">Registration Form</div>
       <div className="rg-team-details">
         <div className="rg-team-topic">Team Details</div>

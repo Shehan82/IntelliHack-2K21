@@ -356,6 +356,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .title-card-img-top1 {
+  border: 1px solid white;
   max-width: 17rem;
   max-height: 15rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
@@ -368,6 +369,12 @@
   color: black;
   bottom: 80px;
   right: 59px;
+}
+.intellihack-master-image {
+  border: 1px solid red;
+  flex: 30%;
+  text-align: right;
+  position: relative;
 }
 .title-card-img-top2-text {
   position: absolute;
@@ -534,5 +541,102 @@
   .title-card-img-top1 {
     max-width: 10rem;
     max-height: 8rem;
+  }
+}
+
+.title-row1 {
+  display: flex;
+
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+.intellihack-master-img-cnt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intellihack-master-img {
+  width: 300px;
+}
+.title-txt {
+  position: absolute;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.intellihack-mstr-txt {
+  color: white;
+}
+
+.title-main-cnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intellihack-mstr-txt {
+  height: fit-content;
+  width: 50%;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: justify;
+  /* background-color: #041149; */
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  font-size: 18px;
+  background: #173b6962;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.populer-team {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.title-row2 {
+  display: flex;
+
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1150px) {
+  .title-row1 {
+    flex-direction: column;
+  }
+  .intellihack-mstr-txt {
+    width: 80%;
+  }
+
+  .title-row2 {
+    flex-direction: column-reverse;
+  }
+
+  .intellihack-master-img-cnt {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  .title-txt {
+    font-size: 5vw;
+  }
+
+  .intellihack-master-img {
+    width: 90%;
+  }
+
+  .intellihack-mstr-txt {
+    font-size: 16px;
   }
 }

@@ -1,14 +1,15 @@
 import React from "react";
 import "../styles/footer.css";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
+
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
+
 import Typography from "@mui/material/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
 import CsLogo from "../img/csLogo.png";
+import IntelliLogo from "../img/f1.png";
 
 import {
   faFacebook,
@@ -16,21 +17,48 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-
-function Footer() {
+function Footer({ reference }) {
+  var stt = () => {
+    alert("sldkjfkjsdfs");
+    window.open("http://google.com");
+  };
   return (
-    <div className="ft-cnt">
+    <div ref={reference} className="ft-cnt">
       <div className="row-1">
         <div className="contactUs-cnt">
           <div className="contactUs">Contact Us</div>
-          <div className="our-email">ucscieecschapter@gmail.com</div>
+          <div className="our-email">ieeecsucsc@gmail.com</div>
           <div className="social-media-row">
-            <FontAwesomeIcon size="3x" icon={faFacebook} />
-            <FontAwesomeIcon size="3x" icon={faLinkedin} />
-            <FontAwesomeIcon size="3x" icon={faInstagram} />
+            <FontAwesomeIcon
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                window.open("https://www.facebook.com/IEEECSUCSC");
+              }}
+              size="3x"
+              icon={faFacebook}
+            />
+            <FontAwesomeIcon
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                window.open("https://www.linkedin.com/company/13686212");
+              }}
+              size="3x"
+              icon={faLinkedin}
+            />
+            <FontAwesomeIcon
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                window.open("https://www.instagram.com/ieee.cs.ucsc/");
+              }}
+              size="3x"
+              icon={faInstagram}
+            />
+          </div>
+
+          <div className="row2">
+            <img className="csLogo" src={CsLogo} alt="" />
+            <div className="logo-border"></div>
+            <img className="csLogo" src={IntelliLogo} alt="" />
           </div>
         </div>
         <div className="card-cnt">
@@ -101,7 +129,6 @@ function Footer() {
           {/* dfsdfdsf */}
 
           <Card
-            className="card-ftr"
             style={{ margin: 20, backgroundColor: "#041149" }}
             sx={{ minWidth: 200, maxWidth: 320 }}
           >
@@ -148,7 +175,7 @@ function Footer() {
                 variant="body2"
                 color="text.secondary"
               >
-                shashiniperamuna@gmail.com
+                shashini91@gmail.com
               </Typography>
 
               <Typography
@@ -161,7 +188,7 @@ function Footer() {
                 variant="body2"
                 color="text.secondary"
               >
-                0713989181
+                0764503326
               </Typography>
             </CardContent>
           </Card>
@@ -235,8 +262,8 @@ function Footer() {
         </div>
       </div>
 
-      <div className="row2">
-        <img className="csLogo" src={CsLogo} alt="" />
+      <div className="row3">
+        <div className="copyright">© Copyright IEEECS. All right reserved.</div>
       </div>
     </div>
   );
