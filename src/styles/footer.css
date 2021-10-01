@@ -60,7 +60,8 @@
 }
 
 .csLogo {
-  width: 150px;
+  /* width: 150px; */
+  height: 75px;
 }
 
 .logo-border {
@@ -81,7 +82,7 @@
   margin-top: 60px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1360px) {
   .row-1 {
     flex-direction: column;
     gap: 50px;
@@ -100,11 +101,13 @@
     flex-direction: column;
   }
 }
-@media (max-width: 440px) {
-  .csLogo {
-    width: 40%;
-  }
 
+@media (max-width: 480px) {
+  .csLogo {
+    height: 15vw;
+  }
+}
+@media (max-width: 440px) {
   .contactUs {
     font-size: 30px;
   }

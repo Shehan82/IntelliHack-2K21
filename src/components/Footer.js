@@ -62,70 +62,6 @@ function Footer({ reference }) {
           </div>
         </div>
         <div className="card-cnt">
-          <Card
-            style={{ margin: 20, backgroundColor: "#041149" }}
-            sx={{ minWidth: 200, maxWidth: 320 }}
-          >
-            <CardMedia
-              component="img"
-              height="250"
-              image="https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fresize-1632865386424723758manthi.jpg?alt=media&token=1a1c8f32-c05e-4c7e-957c-ab210dd61b98"
-              alt="green iguana"
-            />
-            <CardContent>
-              <Typography
-                style={{
-                  fontSize: 20,
-
-                  color: "white",
-                  fontFamily: "Poppins, sans-serif",
-                }}
-                gutterBottom
-                variant="h5"
-                component="div"
-              >
-                Manthi Nimaya
-              </Typography>
-
-              <Typography
-                style={{
-                  fontSize: 14,
-
-                  color: "white",
-                  fontFamily: "Poppins, sans-serif",
-                }}
-                variant="body2"
-                color="text.secondary"
-              >
-                Chair Person
-              </Typography>
-              <Typography
-                style={{
-                  fontSize: 14,
-                  marginTop: 10,
-                  color: "white",
-                  fontFamily: "Poppins, sans-serif",
-                }}
-                variant="body2"
-                color="text.secondary"
-              >
-                manthinimaya@gmail.com
-              </Typography>
-
-              <Typography
-                style={{
-                  fontSize: 14,
-                  marginTop: 5,
-                  color: "white",
-                  fontFamily: "Poppins, sans-serif",
-                }}
-                variant="body2"
-                color="text.secondary"
-              >
-                0764503326
-              </Typography>
-            </CardContent>
-          </Card>
           {/* dfsdfdsf */}
 
           <Card
@@ -167,7 +103,7 @@ function Footer({ reference }) {
               </Typography>
               <Typography
                 style={{
-                  fontSize: 14,
+                  fontSize: 12,
                   marginTop: 10,
                   color: "white",
                   fontFamily: "Poppins, sans-serif",
@@ -175,12 +111,12 @@ function Footer({ reference }) {
                 variant="body2"
                 color="text.secondary"
               >
-                shashini91@gmail.com
+                shashinitharuka9@gmail.com
               </Typography>
 
               <Typography
                 style={{
-                  fontSize: 14,
+                  fontSize: 12,
                   marginTop: 5,
                   color: "white",
                   fontFamily: "Poppins, sans-serif",
@@ -188,7 +124,72 @@ function Footer({ reference }) {
                 variant="body2"
                 color="text.secondary"
               >
-                0764503326
+                0713989181
+              </Typography>
+            </CardContent>
+          </Card>
+
+          <Card
+            style={{ margin: 20, backgroundColor: "#041149" }}
+            sx={{ minWidth: 200, maxWidth: 320 }}
+          >
+            <CardMedia
+              component="img"
+              height="250"
+              image="https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fimgonline-com-ua-resize-EyddHUtOoo8fKYu.png?alt=media&token=8652f483-8196-4e2b-af2a-7684075b4f98"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography
+                style={{
+                  fontSize: 20,
+
+                  color: "white",
+                  fontFamily: "Poppins, sans-serif",
+                }}
+                gutterBottom
+                variant="h5"
+                component="div"
+              >
+                Kasunika Hansamali
+              </Typography>
+
+              <Typography
+                style={{
+                  fontSize: 14,
+
+                  color: "white",
+                  fontFamily: "Poppins, sans-serif",
+                }}
+                variant="body2"
+                color="text.secondary"
+              >
+                Event Secretary
+              </Typography>
+              <Typography
+                style={{
+                  fontSize: 12,
+                  marginTop: 10,
+                  color: "white",
+                  fontFamily: "Poppins, sans-serif",
+                }}
+                variant="body2"
+                color="text.secondary"
+              >
+                Kasunikahansamali.96@gmail.com
+              </Typography>
+
+              <Typography
+                style={{
+                  fontSize: 12,
+                  marginTop: 5,
+                  color: "white",
+                  fontFamily: "Poppins, sans-serif",
+                }}
+                variant="body2"
+                color="text.secondary"
+              >
+                0714632957
               </Typography>
             </CardContent>
           </Card>
@@ -230,11 +231,11 @@ function Footer({ reference }) {
                 variant="body2"
                 color="text.secondary"
               >
-                Programming head
+                Programming Head
               </Typography>
               <Typography
                 style={{
-                  fontSize: 14,
+                  fontSize: 12,
                   marginTop: 10,
                   color: "white",
                   fontFamily: "Poppins, sans-serif",
@@ -242,12 +243,12 @@ function Footer({ reference }) {
                 variant="body2"
                 color="text.secondary"
               >
-                yohannayanajitj@gmail.com
+                yohannayanajith40@gmail.com
               </Typography>
 
               <Typography
                 style={{
-                  fontSize: 14,
+                  fontSize: 12,
                   marginTop: 5,
                   color: "white",
                   fontFamily: "Poppins, sans-serif",

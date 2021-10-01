@@ -4,6 +4,7 @@ import "../styles/mainSection.css";
 
 import Clock from "./Clock";
 import NavBar from "./NavBar";
+import Typewriter from "typewriter-effect";
 
 import Logo2 from "../img/f2.png";
 
@@ -47,8 +48,21 @@ function MainSection({
           <img className="white-logo" src={Logo2} alt="" />
 
           <div className="clock-cnt">
-            <div className="clock-text">Proposal submission ends in</div>
-            <Clock />
+            {/* <div className="clock-text">Proposal submission ends in</div> */}
+            <div className="clock-text">
+              {/* Proposal Submissions Coming Soon . . . */}
+              <Typewriter
+                options={{ autoStart: true, loop: true }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Proposal Submissions Coming Soon . . . ")
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .start();
+                }}
+              />
+            </div>
+            {/* <Clock /> */}
           </div>
         </div>
       </div>

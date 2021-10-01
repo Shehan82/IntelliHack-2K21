@@ -10,13 +10,26 @@ import Photo4 from "../img/photo4.jpg";
 
 var items = [
   {
-    image: Photo1,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp2.jpg?alt=media&token=bd640818-5df5-4cee-9d4d-c5eea489fd27",
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp4.jpg?alt=media&token=a44bff38-d2ae-465f-8f20-01dfc24c5b9d",
   },
   {
     image: Photo2,
   },
   {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp3.jpg?alt=media&token=82f5e379-3759-4d31-967b-9804ca7ec042",
+  },
+  {
     image: Photo3,
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp1.jpg?alt=media&token=8b458efe-a266-48a4-a699-1593ebbe48e9",
   },
   {
     image: Photo4,

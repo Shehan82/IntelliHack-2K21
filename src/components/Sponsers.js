@@ -12,18 +12,18 @@ function Sponsers({ reference }) {
       <div className="ps-sponser-title">Sponsors</div>
       <Flip left>
         <div className="ps-main-sponser">
-          <div className="sponser-title">Official platinum partner</div>
-          <img className="sponser-img" src={PickMeLogo} alt="" />
+          <div className="sponser-title">Official Knowledge partner</div>
+          <img className="sponser-img" src={GDGLogo} alt="" />
         </div>
       </Flip>
-      <Flip left>
+      {/* <Flip left>
         <div className="ps-main-sponser">
           <div className="sponser-title">Official platinum partner</div>
           <img className="sponser-img" src={N9X} alt="" />
         </div>
-      </Flip>
+      </Flip> */}
 
-      <div className="spn-other-sponsers">
+      {/* <div className="spn-other-sponsers">
         <Flip left>
           <div className="ps-main-sponser">
             <div className="sponser-title">Official platinum partner</div>
@@ -44,7 +44,7 @@ function Sponsers({ reference }) {
             <img className="sponser-img" src={LsegLogo} alt="" />
           </div>
         </Flip>
-      </div>
+      </div> */}
     </div>
   );
 }

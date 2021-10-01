@@ -71,7 +71,7 @@ const Price = ({ reference }) => {
               />
               <div class="title-txt">
                 <div>
-                  INTELLIHACK'21
+                  INTELLIHACK 2.0
                   <br />
                   MASTER
                 </div>
@@ -92,11 +92,11 @@ const Price = ({ reference }) => {
       <div className="title-main-cnt populer-team">
         <div className="title-row2">
           <div className="intellihack-mstr-txt">
-            Machine Learning related tasks will be posted on our social media
-            platforms on a weekly basis, which is an open event for any
-            registered contestant. A leaderboard will be maintained throughout
-            the competing period and winners will be awarded with the title of
-            “IntelliHack Master” and valuable prizes.
+            The top ten finalists will present their applications in the form of
+            a short video or a creative post, which will be shared on our social
+            media platforms. The team that receives the highest score based on
+            social media analytics (Reacts, Shares), will be selected as the
+            "Most Popular Team" and prizes will be awarded.
           </div>
           <Flip>
             <div className="intellihack-master-img-cnt">

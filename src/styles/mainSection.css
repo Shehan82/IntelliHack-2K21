@@ -46,6 +46,13 @@
   font-size: 30px;
 }
 
+@media (max-width: 680px) {
+  .clock-text {
+    /* background-color: red; */
+    font-size: 20px;
+  }
+}
+
 @keyframes fadeinClockDiv {
   from {
     margin-left: 200px;
@@ -330,9 +337,18 @@
 
 @media (max-width: 500px) {
   .clock-text {
-    font-size: 6vw;
+    font-size: 4vw;
   }
   .white-logo {
     height: 35vw;
   }
 }
+
+/* @media (max-width: 500px) {
+  .clock-text {
+    font-size: 6vw;
+  }
+  .white-logo {
+    height: 35vw;
+  }
+} */

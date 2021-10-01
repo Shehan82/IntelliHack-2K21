@@ -35,6 +35,22 @@
 }
 
 .ps-btn {
+  /* background-color: #041149; */
+  background-color: grey;
+  height: 70px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ps-btn1 {
   background-color: #041149;
   height: 70px;
   width: 400px;
@@ -86,6 +102,12 @@
   }
 
   .ps-btn {
+    width: 80vw;
+    font-size: 4vw;
+    height: 13vw;
+  }
+
+  .ps-btn1 {
     width: 80vw;
     font-size: 4vw;
     height: 13vw;
