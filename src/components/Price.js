@@ -24,7 +24,7 @@ const Price = ({ reference }) => {
                 alt="third_place"
               />
             </div>
-            <div className="third_card-detail">Rs. 25,000</div>
+            <div className="third_card-detail">Rs. 30,000</div>
           </div>
         </Flip>
 

@@ -6,7 +6,8 @@ function PraposalSubmission({ reference, openPopUp }) {
     <div ref={reference} className="ps-main">
       <div className="ps-title">Proposal Submissions will open soon!</div>
       <div className="ps-sub-title">
-        You can download Data set{" "}
+        You can download
+        {/* Data set{" "}
         <span
           // onClick={() => {
           //   window.open("https://www.facebook.com/IEEECSUCSC");
@@ -14,7 +15,7 @@ function PraposalSubmission({ reference, openPopUp }) {
           style={{ cursor: "pointer", color: "grey" }}
         >
           here
-        </span>{" "}
+        </span>{" "} */}
       </div>
       <div className="ps-sub-title">
         Proposal template{" "}
@@ -25,6 +26,7 @@ function PraposalSubmission({ reference, openPopUp }) {
       </div>
 
       <div className="ps-btn-cnt">
+        {/* <div className="ps-btn1">Rules & Regulations</div> */}
         <div className="ps-btn1">Rules & Regulations</div>
         {/* <div onClick={openPopUp} className="ps-btn">
           Registration

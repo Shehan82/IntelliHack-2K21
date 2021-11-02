@@ -104,15 +104,15 @@ function RegistrationForm({ handleOpenSuccess, handleClose }) {
       teamDetails.member3Name != "" &&
       teamDetails.member3NIC != "" &&
       teamDetails.member3Contact != "" &&
-      teamDetails.member3tshirtSize != "" &&
-      teamDetails.member4Name != "" &&
-      teamDetails.member4NIC != "" &&
-      teamDetails.member4Contact != "" &&
-      teamDetails.member4tshirtSize != "" &&
-      teamDetails.member5Name != "" &&
-      teamDetails.member5NIC != "" &&
-      teamDetails.member5Contact != "" &&
-      teamDetails.member5tshirtSize != ""
+      teamDetails.member3tshirtSize != ""
+      // teamDetails.member4Name != "" &&
+      // teamDetails.member4NIC != "" &&
+      // teamDetails.member4Contact != "" &&
+      // teamDetails.member4tshirtSize != "" &&
+      // teamDetails.member5Name != "" &&
+      // teamDetails.member5NIC != "" &&
+      // teamDetails.member5Contact != "" &&
+      // teamDetails.member5tshirtSize != ""
     ) {
       seterr("");
       setloading(true);
@@ -152,7 +152,7 @@ function RegistrationForm({ handleOpenSuccess, handleClose }) {
           setloading(false);
         });
     } else {
-      seterr("All fields are must be filled");
+      seterr("Fill in all the fields of at least three users.");
     }
   };
 
@@ -591,6 +591,7 @@ function RegistrationForm({ handleOpenSuccess, handleClose }) {
 
       <div class="rg-announce">
         * If you have any issues regarding registration, please contact us.{" "}
+        <br />* Email : ieeecsucsc@gmail.com
       </div>
     </div>
   );

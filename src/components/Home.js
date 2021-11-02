@@ -194,7 +194,14 @@ function Home() {
             <div className="success-modal">
               <FontAwesomeIcon color="green" size="6x" icon={faCheckCircle} />
               <div style={{ marginTop: 20 }}>
-                Your team added successfully, Stay tuned with Us.
+                Your team has successfully registered.
+              </div>
+              <div style={{ marginTop: 20, fontSize: 14 }}>
+                If you do not receive an e-mail from us within a day, please
+                contact us.
+              </div>
+              <div style={{ marginTop: 10, fontSize: 14 }}>
+                Email : ieeecsucsc@gmail.com
               </div>
             </div>
           </Modal>
