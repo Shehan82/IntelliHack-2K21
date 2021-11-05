@@ -15,7 +15,6 @@ import {
 import { red } from "@material-ui/core/colors";
 
 const PreviousBtn = (props) => {
-  console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>

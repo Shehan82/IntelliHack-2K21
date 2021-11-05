@@ -152,7 +152,7 @@ function RegistrationForm({ handleOpenSuccess, handleClose }) {
           setloading(false);
         });
     } else {
-      seterr("Fill in all the fields of at least three users.");
+      seterr("Fill in all the fields of team leader and at least 2 members.");
     }
   };
 

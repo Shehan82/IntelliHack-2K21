@@ -9,47 +9,48 @@ import DialogLogo from "../img/dialogLogo.jpg";
 import LsegLogo from "../img/lsegLogo.png";
 import N9X from "../img/99x.png";
 import Flip from "react-reveal/Flip";
+import Bounce from "react-reveal/Bounce";
 
 function Sponsers({ reference }) {
   return (
     <div ref={reference} className="spn-main">
       <div className="ps-sponser-title">Sponsors</div>
       <div className="ps-platinum-div">
-        <Flip left>
+        <Bounce top>
           <div className="ps-platinum">
-            <div className="sponser-title">Official Platinum partner</div>
+            <div className="sponser-title">Official Platinum Sponser</div>
             <div className="img-cnt">
               <img className="ps-platinum-img" src={IFSLogo} alt="" />
             </div>
           </div>
-        </Flip>
-        <Flip left>
+        </Bounce>
+        <Bounce bottom>
           <div className="ps-platinum">
-            <div className="sponser-title">Official Platinum partner</div>
+            <div className="sponser-title">Official Platinum Sponser</div>
             <div className="img-cnt">
               <img className="ps-platinum-img lseg-img" src={LsegLogo} alt="" />
             </div>
           </div>
-        </Flip>
+        </Bounce>
       </div>
 
-      <Flip left>
+      <Bounce left>
         <div className="ps-main-sponser">
-          <div className="sponser-title">Official Golden partner</div>
+          <div className="sponser-title">Official Golden Sponser</div>
           <div className="img-cnt">
             <img className="sponser-img dialog-img" src={DialogLogo} alt="" />
           </div>
         </div>
-      </Flip>
+      </Bounce>
 
-      <Flip left>
+      <Bounce right>
         <div className="ps-main-sponser">
           <div className="sponser-title">Official Knowledge partner</div>
           <div className="img-cnt">
             <img className="sponser-img" src={GDGLogo} alt="" />
           </div>
         </div>
-      </Flip>
+      </Bounce>
 
       {/* <div className="spn-other-sponsers">
         <Flip left>

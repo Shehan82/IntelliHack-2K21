@@ -115,10 +115,30 @@
     text-align: center;
   } */
 
+  /* .ps-platinum-div {
+    flex-direction: column;
+    gap: 0px;
+   
+  } */
+
+  .ps-platinum {
+    width: 450px;
+    height: 300px;
+  }
+
+  .ps-platinum-img {
+    width: 330px;
+    /* background-color: rebeccapurple; */
+  }
+  .lseg-img {
+    width: 430px;
+  }
+}
+
+@media (max-width: 1120px) {
   .ps-platinum-div {
     flex-direction: column;
     gap: 0px;
-    /* border: 1px solid red; */
   }
 }
 

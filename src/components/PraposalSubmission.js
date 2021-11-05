@@ -19,20 +19,46 @@ function PraposalSubmission({ reference, openPopUp }) {
       </div>
       <div className="ps-sub-title">
         Proposal template{" "}
-        <span style={{ cursor: "pointer", color: "grey" }}>here</span>
+        <span
+          onClick={() => {
+            window.open("https://www.facebook.com/IEEECSUCSC");
+          }}
+          style={{ cursor: "pointer", color: "grey" }}
+        >
+          here
+        </span>
       </div>
       <div className="ps-sub-title">
-        Booklet <span style={{ cursor: "pointer", color: "grey" }}>here</span>
+        Booklet{" "}
+        <span
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1rJMSGwblMO0PpGUQgVB_uLccH2J4wvDM/view?usp=sharing"
+            );
+          }}
+          style={{ cursor: "pointer", color: "green" }}
+        >
+          here
+        </span>
       </div>
 
       <div className="ps-btn-cnt">
         {/* <div className="ps-btn1">Rules & Regulations</div> */}
-        <div className="ps-btn1">Rules & Regulations</div>
-        {/* <div onClick={openPopUp} className="ps-btn">
+        <div
+          onClick={() => {
+            window.open(
+              "https://drive.google.com/file/d/1EZ8NSIBMG1u1FnzNtGcvrSL6nZ2WcckJ/view?usp=sharing"
+            );
+          }}
+          className="ps-btn1"
+        >
+          Rules & Regulations
+        </div>
+        <div onClick={openPopUp} className="ps-btn">
           Registration
-        </div> */}
+        </div>
 
-        <div className="ps-btn">Registration</div>
+        {/* <div className="ps-btn">Registration</div> */}
       </div>
     </div>
   );

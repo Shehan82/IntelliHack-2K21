@@ -11,28 +11,39 @@ import Photo4 from "../img/photo4.jpg";
 var items = [
   {
     image:
-      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp2.jpg?alt=media&token=bd640818-5df5-4cee-9d4d-c5eea489fd27",
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli1.jpg?alt=media&token=3dbe51e8-5ccd-4fc5-8e2d-395b8cdfca99",
   },
   {
     image:
-      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp4.jpg?alt=media&token=a44bff38-d2ae-465f-8f20-01dfc24c5b9d",
-  },
-  {
-    image: Photo2,
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli2.jpg?alt=media&token=6a7b5170-f128-4112-8304-63f6aebf74f3",
   },
   {
     image:
-      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp3.jpg?alt=media&token=82f5e379-3759-4d31-967b-9804ca7ec042",
-  },
-  {
-    image: Photo3,
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli3.jpg?alt=media&token=1996ab46-6bb4-4bdd-b4af-d60a792eaf7b",
   },
   {
     image:
-      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fp1.jpg?alt=media&token=8b458efe-a266-48a4-a699-1593ebbe48e9",
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli4.jpg?alt=media&token=9d803190-b24e-4a16-bc67-b55e21d4abe3",
   },
   {
-    image: Photo4,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli5.jpg?alt=media&token=4f56a270-8595-4431-a2aa-7bcf605e620e",
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli6.jpg?alt=media&token=380f12fc-fe60-4ab6-9aae-af3c485988b9",
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli7.jpg?alt=media&token=b4535cb5-b83e-479b-a638-28800e7c0b4e",
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli8.jpg?alt=media&token=80e18f0e-b891-43d1-9552-7a592ebfef49",
+  },
+  {
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/intellihack.appspot.com/o/images921%2Fintelli9.jpg?alt=media&token=c21b7ef9-1eb0-4101-9dc5-b5863594258d",
   },
 ];
 
@@ -52,19 +63,19 @@ function WhyIntelliHackSection({ reference }) {
           <div className="why-intellihack-box">
             <div className="why-intellihack-topic">Why IntelliHack ?</div>
             <div className="why-intellihack-text">
-              IntelliHack is the first ever Machine Learning hackathon in Sri
+              IntelliHack is the first-ever Machine Learning hackathon in Sri
               Lanka. This is one of the year’s most anticipated, exciting, and
               electrifying events that innovative minds look forward to. The
               contestants get the privilege to network with some of the topmost
               experts in the industry and expose themselves to this attractive
               technology that would benefit them immensely in their future
-              activities.IntelliHack is a great platform for those curious minds
-              interested in machine-based learning to meet and collaborate with
-              each other. It also encourages the youth to participate and be a
-              part of this revolutionary technology and sciences which are the
-              upcoming breakthroughs in the computer world. And among many more
-              benefits, IntelliHack aims to raise awareness among the society
-              about these machine-based learning and artificial intelligence.
+              activities. IntelliHack is a great platform for curious minds
+              interested in machine learning to meet and collaborate with each
+              other. It also encourages the youth to participate and be a part
+              of this revolutionary technology and sciences which are the
+              upcoming breakthroughs in the technical world. Moreover, among
+              many more benefits, IntelliHack aims to raise awareness among
+              society about machine learning and artificial intelligence.
             </div>
           </div>
         </div>

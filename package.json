@@ -40,6 +40,7 @@
     "swiper": "^7.0.5",
     "three": "^0.126.0",
     "typewriter-effect": "^2.18.0",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

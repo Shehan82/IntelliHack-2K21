@@ -5,6 +5,7 @@ import Third_Place from "../img/third_place.png";
 import Titles from "../img/title2.png";
 import "../styles/price.css";
 import Flip from "react-reveal/Flip";
+import Bounce from "react-reveal/Bounce";
 
 const Price = ({ reference }) => {
   return (
@@ -13,7 +14,7 @@ const Price = ({ reference }) => {
         <div>Prizes</div>
       </div>
       <div className="winners-row">
-        <Flip right>
+        <Bounce left>
           <div className="third-place">
             <h1>Third Place</h1>
             <div className="third_card">
@@ -26,9 +27,9 @@ const Price = ({ reference }) => {
             </div>
             <div className="third_card-detail">Rs. 30,000</div>
           </div>
-        </Flip>
+        </Bounce>
 
-        <Flip left>
+        <Bounce bottom>
           <div className="first-place">
             <h1>First Place</h1>
             <div className="third_card">
@@ -40,11 +41,11 @@ const Price = ({ reference }) => {
             </div>
             <div className="second_card-detail">Rs. 75,000</div>
           </div>
-        </Flip>
+        </Bounce>
 
         {/* #041149 */}
 
-        <Flip right>
+        <Bounce right>
           <div className="second-place">
             <h1>Second Place</h1>
             <div className="third_card">
@@ -56,28 +57,26 @@ const Price = ({ reference }) => {
             </div>
             <div className="first_card-detail">Rs. 50,000</div>
           </div>
-        </Flip>
+        </Bounce>
       </div>
       <div className="header-name2">{/* <div>Titles</div> */}</div>
 
       <div className="title-main-cnt">
         <div className="title-row1">
-          <Flip>
-            <div className="intellihack-master-img-cnt">
-              <img
-                className="intellihack-master-img"
-                src={Titles}
-                alt="intellihack-master"
-              />
-              <div class="title-txt">
-                <div>
-                  INTELLIHACK 2.0
-                  <br />
-                  MASTER
-                </div>
+          <div className="intellihack-master-img-cnt">
+            <img
+              className="intellihack-master-img"
+              src={Titles}
+              alt="intellihack-master"
+            />
+            <div class="title-txt">
+              <div>
+                INTELLIHACK 2.0
+                <br />
+                MASTER
               </div>
             </div>
-          </Flip>
+          </div>
 
           <div className="intellihack-mstr-txt">
             Machine Learning related tasks will be posted on our social media
@@ -98,22 +97,21 @@ const Price = ({ reference }) => {
             social media analytics (Reacts, Shares), will be selected as the
             "Most Popular Team" and prizes will be awarded.
           </div>
-          <Flip>
-            <div className="intellihack-master-img-cnt">
-              <img
-                className="intellihack-master-img"
-                src={Titles}
-                alt="intellihack-master"
-              />
-              <div class="title-txt">
-                <div>
-                  MOST POPULAR
-                  <br />
-                  TEAM
-                </div>
+
+          <div className="intellihack-master-img-cnt">
+            <img
+              className="intellihack-master-img"
+              src={Titles}
+              alt="intellihack-master"
+            />
+            <div class="title-txt">
+              <div>
+                MOST POPULAR
+                <br />
+                TEAM
               </div>
             </div>
-          </Flip>
+          </div>
         </div>
       </div>
 

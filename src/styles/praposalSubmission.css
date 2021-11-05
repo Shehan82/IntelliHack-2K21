@@ -51,8 +51,8 @@
 }
 
 .ps-btn1 {
-  /* background-color: #041149; */
-  background-color: grey;
+  background-color: #041149;
+  /* background-color: grey; */
   height: 70px;
   width: 400px;
   display: flex;
@@ -66,11 +66,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* .ps-btn:hover,
+/* .ps-btn:hover, */
 .ps-btn1:hover {
- 
   box-shadow: 0px 0px 65px -16px rgba(0, 0, 0, 0.79);
-} */
+}
 
 @media (max-width: 1200px) {
   .ps-title {

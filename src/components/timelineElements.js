@@ -3,7 +3,7 @@ let timelineElements = [
     id: 1,
     title: "Proposal Submissions Open",
     description:
-      "The proposal submissions for the initial phase will be opened. This phase will be an ideathon. The contestants will be given ten datasets in which they have to choose one from the given. They must submit an idea proposal for a Machine Learning application based on the selected dataset.",
+      "The proposal submissions for the initial phase will be opened. The initial round will be an ideathon. The problem should be from one of the given domains, or if contestants choose a different domain, they can use the wildcard option. They must submit a proposal describing the machine learning solution to the problem within the selected area.",
     date: "05-11-2021",
   },
   {
@@ -38,7 +38,7 @@ let timelineElements = [
     id: 6,
     title: "Final Round Start",
     description:
-      "The submissions for the hackathon will be opened. The top ten selected contestants will be given five different data sets to choose from, and they are required to propose an application related to the selected data set and implement it.",
+      "The submissions for the final hackathon will be opened. The submitted proposals will be shortlisted into ten teams. The top ten contestants need to implement the idea that they had proposed in the initial phase. The solution must meet the conditions specified in the submitted proposal.",
     date: "01-12-2021",
   },
   {
